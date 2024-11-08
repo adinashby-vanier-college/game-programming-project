@@ -6,14 +6,14 @@ import greenfoot.*;
 /**
  * 
  */
-public class Lab1 extends World
+public class Level2 extends World
 {
 
     /**
-     * Constructor for objects of class Lab1.
+     * Constructor for objects of class Level2.
      */
-    public Lab1()
+    public Level2()
     {
-        super(600, 400, 1);
+        super(1000, 600, 1);
     }
 }

@@ -6,11 +6,11 @@ import greenfoot.*;
 /**
  * 
  */
-public class F1 extends Actor
+public class BlackWall extends Actor
 {
 
     /**
-     * Act - do whatever the F1 wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the BlackWall wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
