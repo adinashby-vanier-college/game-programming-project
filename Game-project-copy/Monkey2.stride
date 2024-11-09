@@ -28,21 +28,41 @@
                 <if condition="Greenfoot.isKeyDown(&quot;left&quot;)" condition-java="Greenfoot.isKeyDown(&quot;left&quot;)" enable="true">
                     <ifStatements>
                         <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                        <if condition="isTouching(BlackWall.class)" condition-java="isTouching(BlackWall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                            </ifStatements>
+                        </if>
                     </ifStatements>
                 </if>
                 <if condition="Greenfoot.isKeyDown(&quot;right&quot;)" condition-java="Greenfoot.isKeyDown(&quot;right&quot;)" enable="true">
                     <ifStatements>
                         <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                        <if condition="isTouching(BlackWall.class)" condition-java="isTouching(BlackWall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                            </ifStatements>
+                        </if>
                     </ifStatements>
                 </if>
                 <if condition="Greenfoot.isKeyDown(&quot;up&quot;)" condition-java="Greenfoot.isKeyDown(&quot;up&quot;)" enable="true">
                     <ifStatements>
                         <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
+                        <if condition="isTouching(BlackWall.class)" condition-java="isTouching(BlackWall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
+                            </ifStatements>
+                        </if>
                     </ifStatements>
                 </if>
                 <if condition="Greenfoot.isKeyDown(&quot;down&quot;)" condition-java="Greenfoot.isKeyDown(&quot;down&quot;)" enable="true">
                     <ifStatements>
                         <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
+                        <if condition="isTouching(BlackWall.class)" condition-java="isTouching(BlackWall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
+                            </ifStatements>
+                        </if>
                     </ifStatements>
                 </if>
             </body>

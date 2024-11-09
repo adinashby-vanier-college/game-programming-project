@@ -26,15 +26,39 @@ public class Monkey extends Actor
     {
         if (Greenfoot.isKeyDown("left")) {
             move(-3);
+            if (isTouching(BlackWall.class)) {
+                move(3);
+            }
+            if (isTouching(F2.class)) {
+                move(3);
+            }
         }
         if (Greenfoot.isKeyDown("right")) {
             move(3);
+            if (isTouching(BlackWall.class)) {
+                move(-3);
+            }
+            if (isTouching(F2.class)) {
+                move(-3);
+            }
         }
         if (Greenfoot.isKeyDown("up")) {
             moveUp();
+            if (isTouching(BlackWall.class)) {
+                moveDown();
+            }
+            if (isTouching(F2.class)) {
+                moveDown();
+            }
         }
         if (Greenfoot.isKeyDown("down")) {
             moveDown();
+            if (isTouching(BlackWall.class)) {
+                moveUp();
+            }
+            if (isTouching(F2.class)) {
+                moveUp();
+            }
         }
     }
 
