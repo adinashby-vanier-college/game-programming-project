@@ -29,7 +29,16 @@ public class Monkey extends Actor
             if (isTouching(BlackWall.class)) {
                 move(3);
             }
+            if (isTouching(Bwall.class)) {
+                move(3);
+            }
+            if (isTouching(F1.class)) {
+                move(3);
+            }
             if (isTouching(F2.class)) {
+                move(3);
+            }
+            if (isTouching(F3.class)) {
                 move(3);
             }
         }
@@ -38,7 +47,16 @@ public class Monkey extends Actor
             if (isTouching(BlackWall.class)) {
                 move(-3);
             }
+            if (isTouching(Bwall.class)) {
+                move(-3);
+            }
+            if (isTouching(F1.class)) {
+                move(-3);
+            }
             if (isTouching(F2.class)) {
+                move(-3);
+            }
+            if (isTouching(F3.class)) {
                 move(-3);
             }
         }
@@ -47,7 +65,16 @@ public class Monkey extends Actor
             if (isTouching(BlackWall.class)) {
                 moveDown();
             }
+            if (isTouching(Bwall.class)) {
+                moveDown();
+            }
+            if (isTouching(F1.class)) {
+                moveDown();
+            }
             if (isTouching(F2.class)) {
+                moveDown();
+            }
+            if (isTouching(F3.class)) {
                 moveDown();
             }
         }
@@ -56,7 +83,16 @@ public class Monkey extends Actor
             if (isTouching(BlackWall.class)) {
                 moveUp();
             }
+            if (isTouching(Bwall.class)) {
+                moveUp();
+            }
+            if (isTouching(F1.class)) {
+                moveUp();
+            }
             if (isTouching(F2.class)) {
+                moveUp();
+            }
+            if (isTouching(F3.class)) {
                 moveUp();
             }
         }

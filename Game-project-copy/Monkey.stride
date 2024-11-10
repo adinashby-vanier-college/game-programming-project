@@ -32,7 +32,22 @@
                                 <call expression="move(3)" expression-java="move(3)" enable="true"/>
                             </ifStatements>
                         </if>
+                        <if condition="isTouching(Bwall.class)" condition-java="isTouching(Bwall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F1.class)" condition-java="isTouching(F1.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                            </ifStatements>
+                        </if>
                         <if condition="isTouching(F2.class)" condition-java="isTouching(F2.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F3.class)" condition-java="isTouching(F3.class)" enable="true">
                             <ifStatements>
                                 <call expression="move(3)" expression-java="move(3)" enable="true"/>
                             </ifStatements>
@@ -47,7 +62,22 @@
                                 <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
                             </ifStatements>
                         </if>
+                        <if condition="isTouching(Bwall.class)" condition-java="isTouching(Bwall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F1.class)" condition-java="isTouching(F1.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                            </ifStatements>
+                        </if>
                         <if condition="isTouching(F2.class)" condition-java="isTouching(F2.class)" enable="true">
+                            <ifStatements>
+                                <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F3.class)" condition-java="isTouching(F3.class)" enable="true">
                             <ifStatements>
                                 <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
                             </ifStatements>
@@ -62,7 +92,22 @@
                                 <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
                             </ifStatements>
                         </if>
+                        <if condition="isTouching(Bwall.class)" condition-java="isTouching(Bwall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F1.class)" condition-java="isTouching(F1.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
+                            </ifStatements>
+                        </if>
                         <if condition="isTouching(F2.class)" condition-java="isTouching(F2.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F3.class)" condition-java="isTouching(F3.class)" enable="true">
                             <ifStatements>
                                 <call expression="moveDown()" expression-java="moveDown()" enable="true"/>
                             </ifStatements>
@@ -77,7 +122,22 @@
                                 <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
                             </ifStatements>
                         </if>
+                        <if condition="isTouching(Bwall.class)" condition-java="isTouching(Bwall.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F1.class)" condition-java="isTouching(F1.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
+                            </ifStatements>
+                        </if>
                         <if condition="isTouching(F2.class)" condition-java="isTouching(F2.class)" enable="true">
+                            <ifStatements>
+                                <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
+                            </ifStatements>
+                        </if>
+                        <if condition="isTouching(F3.class)" condition-java="isTouching(F3.class)" enable="true">
                             <ifStatements>
                                 <call expression="moveUp()" expression-java="moveUp()" enable="true"/>
                             </ifStatements>
