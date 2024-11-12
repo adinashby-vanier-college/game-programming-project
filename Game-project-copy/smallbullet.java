@@ -6,13 +6,17 @@ import greenfoot.*;
 /**
  * 
  */
-public class smallbullet extends Actor
+public class SmallBullet extends Actor
 {
 
     /**
-     * Act - do whatever the smallbullet wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the SmallBullet wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
+        move(20);
+        if (isAtEdge()) {
+            getWorld().removeObject(this);
+        }
     }
 }

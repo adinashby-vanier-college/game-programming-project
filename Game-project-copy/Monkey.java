@@ -8,6 +8,9 @@ import greenfoot.*;
 public class Monkey extends Actor
 {
     private int speed = 3;
+    private int gunReloadTime = 20;
+    private int reloadDelayCount = 0;
+    private BananaBullet BB =  new  BananaBullet();
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
@@ -17,6 +20,7 @@ public class Monkey extends Actor
     public void act()
     {
         checkKeyPress();
+        reloadDelayCount = reloadDelayCount + 1;
     }
 
     /**
@@ -96,6 +100,9 @@ public class Monkey extends Actor
                 moveUp();
             }
         }
+        if (Greenfoot.isKeyDown("space")) {
+            fireBananaBullet();
+        }
     }
 
     /**
@@ -112,5 +119,22 @@ public class Monkey extends Actor
     private void moveDown()
     {
         setLocation(getX(), getY() + speed);
+    }
+
+    /**
+     * 
+     */
+    public void setGunReloadTime(int reloadTime)
+    {
+        gunReloadTime = reloadTime;
+    }
+
+    /**
+     * 
+     */
+    public void fireBananaBullet()
+    {
+        getWorld().addObject(BB, getX(), getY());
+        reloadDelayCount = 0;
     }
 }

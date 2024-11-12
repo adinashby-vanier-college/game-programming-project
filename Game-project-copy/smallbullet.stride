@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class name="smallbullet" extends="Actor" enable="true" strideversion="1">
+<class name="SmallBullet" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
     <javadoc xml:space="preserve"/>
     <imports>
         <import target="java.util.*" enable="true"/>
@@ -9,11 +9,18 @@
     <fields/>
     <constructors/>
     <methods>
-        <method access="public" type="void" name="act" enable="true">
-            <javadoc xml:space="preserve">Act - do whatever the smallbullet wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the SmallBullet wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
             <params/>
             <throws/>
-            <body/>
+            <body>
+                <call expression="move(20)" expression-java="move(20)" enable="true"/>
+                <if condition="isAtEdge()" condition-java="isAtEdge()" enable="true">
+                    <ifStatements>
+                        <call expression="getWorld().removeObject(this)" expression-java="getWorld().removeObject(this)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
         </method>
     </methods>
 </class>

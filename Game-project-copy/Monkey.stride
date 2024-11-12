@@ -7,6 +7,9 @@
     <implements/>
     <fields>
         <variable access="private" type="int" type-java="int" name="speed" value="3" value-java="3" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="gunReloadTime" value="20" value-java="20" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="reloadDelayCount" value="0" value-java="0" enable="true"/>
+        <variable access="private" type="BananaBullet" type-java="BananaBullet" name="BB" value="new BananaBullet()" value-java=" new BananaBullet()" enable="true"/>
     </fields>
     <constructors/>
     <methods>
@@ -17,6 +20,7 @@
             <throws/>
             <body>
                 <call expression="checkKeyPress()" expression-java="checkKeyPress()" enable="true"/>
+                <assign dest="reloadDelayCount" dest-java="reloadDelayCount" src="reloadDelayCount+1" src-java="reloadDelayCount + 1" enable="true"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="checkKeyPress" enable="true">
@@ -144,6 +148,11 @@
                         </if>
                     </ifStatements>
                 </if>
+                <if condition="Greenfoot.isKeyDown(&quot;space&quot;)" condition-java="Greenfoot.isKeyDown(&quot;space&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="fireBananaBullet()" expression-java="fireBananaBullet()" enable="true"/>
+                    </ifStatements>
+                </if>
             </body>
         </method>
         <method access="private" type="void" type-java="void" name="moveUp" enable="true">
@@ -160,6 +169,25 @@
             <throws/>
             <body>
                 <call expression="setLocation(getX(),getY()+speed)" expression-java="setLocation(getX(), getY() + speed)" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="setGunReloadTime" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params>
+                <params type="int" type-java="int" name="reloadTime"/>
+            </params>
+            <throws/>
+            <body>
+                <assign dest="gunReloadTime" dest-java="gunReloadTime" src="reloadTime" src-java="reloadTime" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="fireBananaBullet" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="getWorld().addObject(BB,getX(),getY())" expression-java="getWorld().addObject(BB, getX(), getY())" enable="true"/>
+                <assign dest="reloadDelayCount" dest-java="reloadDelayCount" src="0" src-java="0" enable="true"/>
             </body>
         </method>
     </methods>

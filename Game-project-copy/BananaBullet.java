@@ -14,5 +14,9 @@ public class BananaBullet extends Actor
      */
     public void act()
     {
+        move(20);
+        if (isAtEdge()) {
+            getWorld().removeObject(this);
+        }
     }
 }

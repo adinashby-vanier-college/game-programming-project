@@ -24,16 +24,16 @@ public class Lab extends World
      */
     private void prepare()
     {
-        Monkey monkey =  new Monkey();
+        Monkey monkey =  new  Monkey();
         addObject(monkey, 165, 336);
-        BB bB =  new BB();
+        BB bB =  new  BB();
         addObject(bB, 489, 284);
         monkey.setLocation(163, 342);
         monkey.setLocation(173, 343);
         bB.setLocation(401, 337);
-        Security security =  new Security();
+        Security security =  new  Security();
         addObject(security, 401, 337);
-        Play play =  new Play();
+        Play play =  new  Play();
         addObject(play, 315, 225);
         play.setLocation(283, 228);
         bB.setLocation(388, 344);
