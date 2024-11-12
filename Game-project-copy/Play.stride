@@ -10,10 +10,16 @@
     <constructors/>
     <methods>
         <method access="public" type="void" type-java="void" name="act" enable="true">
-            <javadoc xml:space="preserve">Act - do whatever the Play wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <javadoc xml:space="preserve"/>
             <params/>
             <throws/>
-            <body/>
+            <body>
+                <if condition="Greenfoot.mouseClicked(this)" condition-java="Greenfoot.mouseClicked(this)" enable="true">
+                    <ifStatements>
+                        <call expression="Greenfoot.setWorld(new Level1())" expression-java="Greenfoot.setWorld( new Level1())" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
         </method>
     </methods>
 </class>
