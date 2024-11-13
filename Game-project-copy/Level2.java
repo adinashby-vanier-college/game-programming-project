@@ -167,5 +167,12 @@ public class Level2 extends World
         desk1.setLocation(781, 98);
         desk1.setLocation(802, 134);
         f2.setLocation(240, 478);
+        f1.setLocation(124, 357);
+        f2.setLocation(249, 464);
+        f5.setLocation(291, 57);
+        F7 f7 =  new  F7();
+        addObject(f7, 284, 247);
+        Chair2 chair22 =  new  Chair2();
+        addObject(chair22, 319, 293);
     }
 }

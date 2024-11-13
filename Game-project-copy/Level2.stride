@@ -168,6 +168,13 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="desk1.setLocation(781,98)" expression-java="desk1.setLocation(781, 98)" enable="true"/>
                 <call expression="desk1.setLocation(802,134)" expression-java="desk1.setLocation(802, 134)" enable="true"/>
                 <call expression="f2.setLocation(240,478)" expression-java="f2.setLocation(240, 478)" enable="true"/>
+                <call expression="f1.setLocation(124,357)" expression-java="f1.setLocation(124, 357)" enable="true"/>
+                <call expression="f2.setLocation(249,464)" expression-java="f2.setLocation(249, 464)" enable="true"/>
+                <call expression="f5.setLocation(291,57)" expression-java="f5.setLocation(291, 57)" enable="true"/>
+                <variable type="F7" type-java="F7" name="f7" value="new F7()" value-java=" new F7()" enable="true"/>
+                <call expression="addObject(f7,284,247)" expression-java="addObject(f7, 284, 247)" enable="true"/>
+                <variable type="Chair2" type-java="Chair2" name="chair22" value="new Chair2()" value-java=" new Chair2()" enable="true"/>
+                <call expression="addObject(chair22,319,293)" expression-java="addObject(chair22, 319, 293)" enable="true"/>
             </body>
         </method>
     </methods>

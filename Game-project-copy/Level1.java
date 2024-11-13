@@ -277,5 +277,7 @@ public class Level1 extends World
         Security security3 = new Security();
         addObject(security3,667,352);
         desk1.setLocation(305,128);
+        desk1.setLocation(271,97);
+        f22.setLocation(182,419);
     }
 }

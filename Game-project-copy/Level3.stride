@@ -32,6 +32,7 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(bwall,44,306)" expression-java="addObject(bwall, 44, 306)" enable="true"/>
                 <variable type="Bwall" type-java="Bwall" name="bwall2" value="new Bwall()" value-java=" new Bwall()" enable="true"/>
                 <call expression="addObject(bwall2,44,495)" expression-java="addObject(bwall2, 44, 495)" enable="true"/>
+                <variable type="Bwall" type-java="Bwall" name="bwall5" value="new Bwall()" value-java=" new Bwall()" enable="true"/>
                 <variable type="BlackWall" type-java="BlackWall" name="blackWall2" value="new BlackWall()" value-java=" new BlackWall()" enable="true"/>
                 <call expression="addObject(blackWall2,60,515)" expression-java="addObject(blackWall2, 60, 515)" enable="true"/>
                 <variable type="Bwall" type-java="Bwall" name="bwall3" value="new Bwall()" value-java=" new Bwall()" enable="true"/>
@@ -45,7 +46,6 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="blackWall3.setLocation(163,90)" expression-java="blackWall3.setLocation(163, 90)" enable="true"/>
                 <variable type="BlackWall" type-java="BlackWall" name="blackWall4" value="new BlackWall()" value-java=" new BlackWall()" enable="true"/>
                 <call expression="addObject(blackWall4,655,37)" expression-java="addObject(blackWall4, 655, 37)" enable="true"/>
-                <variable type="Bwall" type-java="Bwall" name="bwall5" value="new Bwall()" value-java=" new Bwall()" enable="true"/>
                 <call expression="addObject(bwall5,737,10)" expression-java="addObject(bwall5, 737, 10)" enable="true"/>
                 <variable type="Bwall" type-java="Bwall" name="bwall6" value="new Bwall()" value-java=" new Bwall()" enable="true"/>
                 <call expression="addObject(bwall6,830,8)" expression-java="addObject(bwall6, 830, 8)" enable="true"/>
@@ -131,6 +131,68 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(blackWall16,15,286)" expression-java="addObject(blackWall16, 15, 286)" enable="true"/>
                 <call expression="bwall3.setLocation(257,63)" expression-java="bwall3.setLocation(257, 63)" enable="true"/>
                 <call expression="bwall4.setLocation(332,56)" expression-java="bwall4.setLocation(332, 56)" enable="true"/>
+                <variable type="F8" type-java="F8" name="f8" value="new F8()" value-java=" new F8()" enable="true"/>
+                <call expression="addObject(f8,257,127)" expression-java="addObject(f8, 257, 127)" enable="true"/>
+                <variable type="F5" type-java="F5" name="f5" value="new F5()" value-java=" new F5()" enable="true"/>
+                <call expression="addObject(f5,744,504)" expression-java="addObject(f5, 744, 504)" enable="true"/>
+                <variable type="F5" type-java="F5" name="f52" value="new F5()" value-java=" new F5()" enable="true"/>
+                <call expression="addObject(f52,401,552)" expression-java="addObject(f52, 401, 552)" enable="true"/>
+                <call expression="f5.setLocation(520,490)" expression-java="f5.setLocation(520, 490)" enable="true"/>
+                <call expression="f52.setLocation(810,495)" expression-java="f52.setLocation(810, 495)" enable="true"/>
+                <variable type="Desk" type-java="Desk" name="desk" value="new Desk()" value-java=" new Desk()" enable="true"/>
+                <call expression="addObject(desk,274,478)" expression-java="addObject(desk, 274, 478)" enable="true"/>
+                <call expression="f52.setLocation(594,232)" expression-java="f52.setLocation(594, 232)" enable="true"/>
+                <call expression="f5.setLocation(571,370)" expression-java="f5.setLocation(571, 370)" enable="true"/>
+                <variable type="Chair1" type-java="Chair1" name="chair1" value="new Chair1()" value-java=" new Chair1()" enable="true"/>
+                <call expression="addObject(chair1,210,520)" expression-java="addObject(chair1, 210, 520)" enable="true"/>
+                <variable type="F2" type-java="F2" name="f2" value="new F2()" value-java=" new F2()" enable="true"/>
+                <call expression="addObject(f2,405,295)" expression-java="addObject(f2, 405, 295)" enable="true"/>
+                <call expression="f52.setLocation(713,322)" expression-java="f52.setLocation(713, 322)" enable="true"/>
+                <call expression="f5.setLocation(838,52)" expression-java="f5.setLocation(838, 52)" enable="true"/>
+                <call expression="f52.setLocation(730,521)" expression-java="f52.setLocation(730, 521)" enable="true"/>
+                <variable type="F2" type-java="F2" name="f22" value="new F2()" value-java=" new F2()" enable="true"/>
+                <call expression="addObject(f22,898,308)" expression-java="addObject(f22, 898, 308)" enable="true"/>
+                <call expression="f2.setLocation(482,452)" expression-java="f2.setLocation(482, 452)" enable="true"/>
+                <call expression="removeObject(f2)" expression-java="removeObject(f2)" enable="true"/>
+                <variable type="F3" type-java="F3" name="f3" value="new F3()" value-java=" new F3()" enable="true"/>
+                <call expression="addObject(f3,442,114)" expression-java="addObject(f3, 442, 114)" enable="true"/>
+                <call expression="f8.setLocation(298,101)" expression-java="f8.setLocation(298, 101)" enable="true"/>
+                <call expression="f3.setLocation(454,64)" expression-java="f3.setLocation(454, 64)" enable="true"/>
+                <call expression="desk.setLocation(179,203)" expression-java="desk.setLocation(179, 203)" enable="true"/>
+                <call expression="chair1.setLocation(126,312)" expression-java="chair1.setLocation(126, 312)" enable="true"/>
+                <call expression="f8.setLocation(267,93)" expression-java="f8.setLocation(267, 93)" enable="true"/>
+                <variable type="Chair2" type-java="Chair2" name="chair2" value="new Chair2()" value-java=" new Chair2()" enable="true"/>
+                <call expression="addObject(chair2,240,198)" expression-java="addObject(chair2, 240, 198)" enable="true"/>
+                <variable type="F7" type-java="F7" name="f7" value="new F7()" value-java=" new F7()" enable="true"/>
+                <call expression="addObject(f7,419,499)" expression-java="addObject(f7, 419, 499)" enable="true"/>
+                <call expression="f7.setLocation(448,539)" expression-java="f7.setLocation(448, 539)" enable="true"/>
+                <variable type="Chair2" type-java="Chair2" name="chair22" value="new Chair2()" value-java=" new Chair2()" enable="true"/>
+                <call expression="addObject(chair22,448,539)" expression-java="addObject(chair22, 448, 539)" enable="true"/>
+                <call expression="f7.setLocation(386,470)" expression-java="f7.setLocation(386, 470)" enable="true"/>
+                <call expression="chair22.setLocation(434,541)" expression-java="chair22.setLocation(434, 541)" enable="true"/>
+                <call expression="f52.setLocation(720,496)" expression-java="f52.setLocation(720, 496)" enable="true"/>
+                <call expression="desk.setLocation(171,310)" expression-java="desk.setLocation(171, 310)" enable="true"/>
+                <call expression="desk.setLocation(185,300)" expression-java="desk.setLocation(185, 300)" enable="true"/>
+                <call expression="chair22.setLocation(433,534)" expression-java="chair22.setLocation(433, 534)" enable="true"/>
+                <call expression="f7.setLocation(400,478)" expression-java="f7.setLocation(400, 478)" enable="true"/>
+                <call expression="desk.setLocation(185,331)" expression-java="desk.setLocation(185, 331)" enable="true"/>
+                <call expression="f8.setLocation(271,87)" expression-java="f8.setLocation(271, 87)" enable="true"/>
+                <call expression="f3.setLocation(400,92)" expression-java="f3.setLocation(400, 92)" enable="true"/>
+                <call expression="desk.setLocation(180,310)" expression-java="desk.setLocation(180, 310)" enable="true"/>
+                <call expression="f3.setLocation(635,117)" expression-java="f3.setLocation(635, 117)" enable="true"/>
+                <call expression="f3.setLocation(583,100)" expression-java="f3.setLocation(583, 100)" enable="true"/>
+                <call expression="desk.setLocation(182,299)" expression-java="desk.setLocation(182, 299)" enable="true"/>
+                <call expression="chair2.setLocation(232,194)" expression-java="chair2.setLocation(232, 194)" enable="true"/>
+                <call expression="f3.setLocation(517,118)" expression-java="f3.setLocation(517, 118)" enable="true"/>
+                <call expression="removeObject(desk)" expression-java="removeObject(desk)" enable="true"/>
+                <variable type="Desk1" type-java="Desk1" name="desk1" value="new Desk1()" value-java=" new Desk1()" enable="true"/>
+                <call expression="addObject(desk1,218,256)" expression-java="addObject(desk1, 218, 256)" enable="true"/>
+                <call expression="chair2.setLocation(-138,208)" expression-java="chair2.setLocation(-138, 208)" enable="true"/>
+                <call expression="removeObject(desk1)" expression-java="removeObject(desk1)" enable="true"/>
+                <call expression="removeObject(chair2)" expression-java="removeObject(chair2)" enable="true"/>
+                <call expression="addObject(desk1,208,256)" expression-java="addObject(desk1, 208, 256)" enable="true"/>
+                <call expression="removeObject(desk1)" expression-java="removeObject(desk1)" enable="true"/>
+                <call expression="removeObject(chair1)" expression-java="removeObject(chair1)" enable="true"/>
             </body>
         </method>
     </methods>

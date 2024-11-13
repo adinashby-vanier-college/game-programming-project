@@ -35,6 +35,18 @@ public class Monkey extends Actor
             if (isTouching(Bwall.class)) {
                 move(3);
             }
+            if (isTouching(Chair1.class)){
+                move(3);
+            }
+            if (isTouching(Chair2.class)){
+                move(3);
+            }
+            if (isTouching(Desk.class)){
+                move(3);
+            }
+              if (isTouching(Desk1.class)){
+                move(3);
+            }
             if (isTouching(F1.class)) {
                 move(3);
             }
@@ -42,6 +54,24 @@ public class Monkey extends Actor
                 move(3);
             }
             if (isTouching(F3.class)) {
+                move(3);
+            }
+            if (isTouching(F4.class)){
+                move(3);
+            }
+            if (isTouching(F5.class)){
+                move(3);
+            }
+            if (isTouching(F6.class)){
+                move(3);
+            }
+            if (isTouching(F7.class)){
+                move(3);
+            }
+            if (isTouching(F8.class)){
+                move(3);
+            }
+              if (isTouching(Wall.class)){
                 move(3);
             }
         }
@@ -53,6 +83,18 @@ public class Monkey extends Actor
             if (isTouching(Bwall.class)) {
                 move(-3);
             }
+            if (isTouching(Chair1.class)){
+                move(-3);
+            }
+             if (isTouching(Chair2.class)){
+                move(-3);
+            }
+            if (isTouching(Desk.class)){
+                move(-3);
+            }
+              if (isTouching(Desk1.class)){
+                move(-3);
+            }
             if (isTouching(F1.class)) {
                 move(-3);
             }
@@ -60,6 +102,24 @@ public class Monkey extends Actor
                 move(-3);
             }
             if (isTouching(F3.class)) {
+                move(-3);
+            }
+            if (isTouching(F4.class)){
+                move(-3);
+            }
+            if (isTouching(F5.class)){
+                move(-3);
+            }
+            if (isTouching(F6.class)){
+                move(-3);
+            }
+            if (isTouching(F7.class)){
+                move(-3);
+            }
+            if (isTouching(F8.class)){
+                move(-3);
+            }
+               if (isTouching(Wall.class)){
                 move(-3);
             }
         }
@@ -71,6 +131,18 @@ public class Monkey extends Actor
             if (isTouching(Bwall.class)) {
                 moveDown();
             }
+            if (isTouching(Chair1.class)){
+                moveDown();
+            }
+             if (isTouching(Chair2.class)){
+                moveDown();
+            }
+            if (isTouching(Desk.class)){
+                moveDown();
+            }
+             if (isTouching(Desk1.class)){
+                moveDown();
+            }
             if (isTouching(F1.class)) {
                 moveDown();
             }
@@ -78,6 +150,24 @@ public class Monkey extends Actor
                 moveDown();
             }
             if (isTouching(F3.class)) {
+                moveDown();
+            }
+            if (isTouching(F4.class)){
+                moveDown();
+            }
+            if (isTouching(F5.class)){
+                moveDown();
+            }
+            if (isTouching(F6.class)){
+                moveDown();
+            }
+            if (isTouching(F7.class)){
+                moveDown();
+            }
+            if (isTouching(F8.class)){
+                moveDown();
+            }
+               if (isTouching(Wall.class)){
                 moveDown();
             }
         }
@@ -89,6 +179,18 @@ public class Monkey extends Actor
             if (isTouching(Bwall.class)) {
                 moveUp();
             }
+            if (isTouching(Chair1.class)){
+                moveUp();
+            }
+             if (isTouching(Chair2.class)){
+                moveUp();
+            }
+            if (isTouching(Desk.class)){
+                moveUp();
+            }
+              if (isTouching(Desk1.class)){
+                moveUp();
+            }
             if (isTouching(F1.class)) {
                 moveUp();
             }
@@ -96,6 +198,24 @@ public class Monkey extends Actor
                 moveUp();
             }
             if (isTouching(F3.class)) {
+                moveUp();
+            }
+            if (isTouching(F4.class)){
+                moveUp();
+            }
+            if (isTouching(F5.class)){
+                moveUp();
+            }
+            if (isTouching(F6.class)){
+                moveUp();
+            }
+            if (isTouching(F7.class)){
+                moveUp();
+            }
+            if (isTouching(F8.class)){
+                moveUp();
+            }
+               if (isTouching(Wall.class)){
                 moveUp();
             }
         }
