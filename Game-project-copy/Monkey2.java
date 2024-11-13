@@ -11,7 +11,7 @@ public class Monkey2 extends Actor
     private int speed = 3;
     private int gunReloadTime = 20;
     private int reloadDelayCount = 0;
-    private BananaBullet BB =  new  BananaBullet();
+    private BananaBullet BB =  new BananaBullet();
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 

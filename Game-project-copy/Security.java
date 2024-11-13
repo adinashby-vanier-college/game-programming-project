@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import greenfoot.*;
 
@@ -7,6 +6,7 @@ import greenfoot.*;
  */
 public class Security extends Actor
 {
+    private int hitCount = 0;
     private int speed = 3;
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
@@ -16,21 +16,16 @@ public class Security extends Actor
      */
     public void act()
     {
+        if (isTouching(BananaBullet.class))
+        {hitCount++;
+            removeTouching(BananaBullet.class);
+            if(hitCount>=2){
+                getWorld().removeObject(this);}
+            }
+        }
     }
 
     /**
      * 
      */
-    private void moveUp()
-    {
-        setLocation(getX(), getY() - speed);
-    }
 
-    /**
-     * 
-     */
-    private void moveDown()
-    {
-        setLocation(getX(), getY() + speed);
-    }
-}
