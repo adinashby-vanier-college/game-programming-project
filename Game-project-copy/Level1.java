@@ -6,8 +6,9 @@ import greenfoot.*;
  * 
  */
 public class Level1 extends World
-{
-
+{   Security security = new Security();
+    Security security2 = new Security();
+    Security security3 = new Security();
     /**
      * Constructor for objects of class Level1.
      */
@@ -270,14 +271,13 @@ public class Level1 extends World
         desk1.setLocation(311,173);
         Monkey monkey = new Monkey();
         addObject(monkey,44,250);
-        Security security = new Security();
         addObject(security,532,175);
-        Security security2 = new Security();
         addObject(security2,318,423);
-        Security security3 = new Security();
         addObject(security3,667,352);
         desk1.setLocation(305,128);
         desk1.setLocation(271,97);
         f22.setLocation(182,419);
     }
-}
+    
+    }
+
