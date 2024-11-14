@@ -175,6 +175,20 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(f7,284,247)" expression-java="addObject(f7, 284, 247)" enable="true"/>
                 <variable type="Chair2" type-java="Chair2" name="chair22" value="new Chair2()" value-java=" new Chair2()" enable="true"/>
                 <call expression="addObject(chair22,319,293)" expression-java="addObject(chair22, 319, 293)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security,200,164)" expression-java="addObject(security, 200, 164)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security2" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security2,388,512)" expression-java="addObject(security2, 388, 512)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security3" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security3,426,385)" expression-java="addObject(security3, 426, 385)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security4" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security4,660,462)" expression-java="addObject(security4, 660, 462)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security5" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security5,563,190)" expression-java="addObject(security5, 563, 190)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security6" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security6,825,279)" expression-java="addObject(security6, 825, 279)" enable="true"/>
+                <variable type="Security" type-java="Security" name="security7" value="new Security()" value-java=" new Security()" enable="true"/>
+                <call expression="addObject(security7,913,402)" expression-java="addObject(security7, 913, 402)" enable="true"/>
             </body>
         </method>
     </methods>

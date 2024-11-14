@@ -193,6 +193,11 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(desk1,208,256)" expression-java="addObject(desk1, 208, 256)" enable="true"/>
                 <call expression="removeObject(desk1)" expression-java="removeObject(desk1)" enable="true"/>
                 <call expression="removeObject(chair1)" expression-java="removeObject(chair1)" enable="true"/>
+                <variable type="BB" type-java="BB" name="bB" value="new BB()" value-java=" new BB()" enable="true"/>
+                <call expression="addObject(bB,831,128)" expression-java="addObject(bB, 831, 128)" enable="true"/>
+                <call expression="bB.setLocation(747,231)" expression-java="bB.setLocation(747, 231)" enable="true"/>
+                <call expression="bB.setLocation(858,129)" expression-java="bB.setLocation(858, 129)" enable="true"/>
+                <call expression="bB.setLocation(842,109)" expression-java="bB.setLocation(842, 109)" enable="true"/>
             </body>
         </method>
     </methods>

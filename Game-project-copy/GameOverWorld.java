@@ -28,5 +28,6 @@ public class GameOverWorld extends World
         addObject(gameOver, 303, 165);
         SadMonkey sadMonkey =  new  SadMonkey();
         addObject(sadMonkey, 296, 308);
+        Greenfoot.playSound("gameOver.wav");
     }
 }

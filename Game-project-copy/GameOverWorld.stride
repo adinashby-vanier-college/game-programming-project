@@ -29,6 +29,7 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(gameOver,303,165)" expression-java="addObject(gameOver, 303, 165)" enable="true"/>
                 <variable type="SadMonkey" type-java="SadMonkey" name="sadMonkey" value="new SadMonkey()" value-java=" new SadMonkey()" enable="true"/>
                 <call expression="addObject(sadMonkey,296,308)" expression-java="addObject(sadMonkey, 296, 308)" enable="true"/>
+                <call expression="Greenfoot.playSound(&quot;gameOver.wav&quot;)" expression-java="Greenfoot.playSound(&quot;gameOver.wav&quot;)" enable="true"/>
             </body>
         </method>
     </methods>
