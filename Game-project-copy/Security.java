@@ -22,6 +22,7 @@ public class Security extends Actor
             if(hitCount>=2){
                 getWorld().removeObject(this);}
             }
+        
         }
     }
 

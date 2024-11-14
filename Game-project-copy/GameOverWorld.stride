@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="GameOverWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class GameOverWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="GameOver" type-java="GameOver" name="gameOver" value="new GameOver()" value-java=" new GameOver()" enable="true"/>
+                <call expression="addObject(gameOver,303,165)" expression-java="addObject(gameOver, 303, 165)" enable="true"/>
+                <variable type="SadMonkey" type-java="SadMonkey" name="sadMonkey" value="new SadMonkey()" value-java=" new SadMonkey()" enable="true"/>
+                <call expression="addObject(sadMonkey,296,308)" expression-java="addObject(sadMonkey, 296, 308)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
