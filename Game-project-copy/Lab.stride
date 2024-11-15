@@ -57,6 +57,32 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="bB.setLocation(516,293)" expression-java="bB.setLocation(516, 293)" enable="true"/>
                 <call expression="play.setLocation(293,209)" expression-java="play.setLocation(293, 209)" enable="true"/>
                 <call expression="monkey.setLocation(137,335)" expression-java="monkey.setLocation(137, 335)" enable="true"/>
+                <variable type="Title" type-java="Title" name="title" value="new Title()" value-java=" new Title()" enable="true"/>
+                <call expression="addObject(title,308,91)" expression-java="addObject(title, 308, 91)" enable="true"/>
+                <call expression="title.setLocation(387,104)" expression-java="title.setLocation(387, 104)" enable="true"/>
+                <call expression="play.setLocation(317,247)" expression-java="play.setLocation(317, 247)" enable="true"/>
+                <call expression="title.setLocation(240,204)" expression-java="title.setLocation(240, 204)" enable="true"/>
+                <call expression="title.setLocation(350,151)" expression-java="title.setLocation(350, 151)" enable="true"/>
+                <call expression="title.setLocation(305,171)" expression-java="title.setLocation(305, 171)" enable="true"/>
+                <call expression="play.setLocation(318,245)" expression-java="play.setLocation(318, 245)" enable="true"/>
+                <call expression="title.setLocation(314,132)" expression-java="title.setLocation(314, 132)" enable="true"/>
+                <call expression="title.setLocation(308,126)" expression-java="title.setLocation(308, 126)" enable="true"/>
+                <call expression="title.setLocation(320,134)" expression-java="title.setLocation(320, 134)" enable="true"/>
+                <call expression="title.setLocation(312,132)" expression-java="title.setLocation(312, 132)" enable="true"/>
+                <call expression="title.setLocation(304,132)" expression-java="title.setLocation(304, 132)" enable="true"/>
+                <call expression="play.setLocation(306,231)" expression-java="play.setLocation(306, 231)" enable="true"/>
+                <call expression="play.setLocation(301,229)" expression-java="play.setLocation(301, 229)" enable="true"/>
+                <call expression="bB.setLocation(460,200)" expression-java="bB.setLocation(460, 200)" enable="true"/>
+                <call expression="bB.setLocation(528,313)" expression-java="bB.setLocation(528, 313)" enable="true"/>
+                <call expression="bB.setLocation(522,312)" expression-java="bB.setLocation(522, 312)" enable="true"/>
+                <call expression="bB.setLocation(506,314)" expression-java="bB.setLocation(506, 314)" enable="true"/>
+                <call expression="bB.setLocation(504,258)" expression-java="bB.setLocation(504, 258)" enable="true"/>
+                <call expression="bB.setLocation(513,318)" expression-java="bB.setLocation(513, 318)" enable="true"/>
+                <call expression="bB.setLocation(511,256)" expression-java="bB.setLocation(511, 256)" enable="true"/>
+                <call expression="bB.setLocation(510,287)" expression-java="bB.setLocation(510, 287)" enable="true"/>
+                <call expression="bB.setLocation(512,300)" expression-java="bB.setLocation(512, 300)" enable="true"/>
+                <call expression="bB.setLocation(514,308)" expression-java="bB.setLocation(514, 308)" enable="true"/>
+                <call expression="bB.setLocation(515,292)" expression-java="bB.setLocation(515, 292)" enable="true"/>
             </body>
         </method>
     </methods>

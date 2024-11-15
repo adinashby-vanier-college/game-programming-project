@@ -56,5 +56,31 @@ public class Lab extends World
         bB.setLocation(516, 293);
         play.setLocation(293, 209);
         monkey.setLocation(137, 335);
+        Title title =  new  Title();
+        addObject(title, 308, 91);
+        title.setLocation(387, 104);
+        play.setLocation(317, 247);
+        title.setLocation(240, 204);
+        title.setLocation(350, 151);
+        title.setLocation(305, 171);
+        play.setLocation(318, 245);
+        title.setLocation(314, 132);
+        title.setLocation(308, 126);
+        title.setLocation(320, 134);
+        title.setLocation(312, 132);
+        title.setLocation(304, 132);
+        play.setLocation(306, 231);
+        play.setLocation(301, 229);
+        bB.setLocation(460, 200);
+        bB.setLocation(528, 313);
+        bB.setLocation(522, 312);
+        bB.setLocation(506, 314);
+        bB.setLocation(504, 258);
+        bB.setLocation(513, 318);
+        bB.setLocation(511, 256);
+        bB.setLocation(510, 287);
+        bB.setLocation(512, 300);
+        bB.setLocation(514, 308);
+        bB.setLocation(515, 292);
     }
 }
