@@ -13,11 +13,25 @@
             <javadoc xml:space="preserve">Constructor for objects of class Jungle.</javadoc>
             <params/>
             <throws/>
-            <delegate target="super" params="600 , 400 , 1" params-java="600 , 400 , 1"/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
             <body>
                 <comment xml:space="preserve">Create a new world with 600x400 cells with a cell size of 1x1 pixels.</comment>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
             </body>
         </constructor>
     </constructors>
-    <methods/>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="HappyMonkey" type-java="HappyMonkey" name="happyMonkey" value="new HappyMonkey()" value-java=" new HappyMonkey()" enable="true"/>
+                <call expression="addObject(happyMonkey,320,316)" expression-java="addObject(happyMonkey, 320, 316)" enable="true"/>
+                <call expression="happyMonkey.setLocation(436,299)" expression-java="happyMonkey.setLocation(436, 299)" enable="true"/>
+                <call expression="happyMonkey.setLocation(315,320)" expression-java="happyMonkey.setLocation(315, 320)" enable="true"/>
+            </body>
+        </method>
+    </methods>
 </class>

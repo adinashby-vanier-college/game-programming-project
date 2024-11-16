@@ -274,7 +274,7 @@ public class Monkey extends Actor
             int yLocation = banana.getY();
             Actor monkey = new Monkey2();
             world.removeObject(banana);
-            world.addObject(Monkey2(), xLocation, yLocation);
+            world.addObject(new Monkey2(), xLocation, yLocation);
         }
     }
 }
