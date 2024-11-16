@@ -10,6 +10,7 @@ public class Monkey extends Actor
     private int gunReloadTime = 20;
     private int reloadDelayCount = 0;
     private BananaBullet BB =  new  BananaBullet();
+    int Monkey2;
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
@@ -20,6 +21,8 @@ public class Monkey extends Actor
     {
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
+        eat();
+        addObject();
     }
 
     /**
@@ -255,5 +258,23 @@ public class Monkey extends Actor
     {
         getWorld().addObject(BB, getX(), getY());
         reloadDelayCount = 0;
+    }
+    public void eat(){
+        Actor banana = getOneIntersectingObject(Banana.class);
+        if (banana !=null){
+            World world = getWorld();
+            world.removeObject(banana);
+        }
+    }
+    public void addObject(){
+        Actor banana = getOneIntersectingObject(Banana.class);
+        if (banana != null){
+            World world = getWorld();
+            int xLocation = banana.getX();
+            int yLocation = banana.getY();
+            Actor monkey = new Monkey2();
+            world.removeObject(banana);
+            world.addObject(Monkey2(), xLocation, yLocation);
+        }
     }
 }

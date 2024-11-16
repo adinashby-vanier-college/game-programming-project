@@ -24,9 +24,9 @@ public class GameOverWorld extends World
      */
     private void prepare()
     {
-        GameOver gameOver =  new GameOver();
+        GameOver gameOver =  new  GameOver();
         addObject(gameOver, 303, 165);
-        SadMonkey sadMonkey =  new SadMonkey();
+        SadMonkey sadMonkey =  new  SadMonkey();
         addObject(sadMonkey, 296, 308);
         Greenfoot.playSound("gameOver.wav");
     }
