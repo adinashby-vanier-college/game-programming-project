@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class name="Jungle" extends="World" extends-java="World" enable="true" strideversion="1">
-    <javadoc xml:space="preserve">Write a description of class Jungle here.
-@author (your name) @version (a version number or a date)</javadoc>
+    <javadoc xml:space="preserve">Write a description of class Jungle here. @author (your name) @version (a version number or a date)</javadoc>
     <imports>
         <import target="greenfoot.*" enable="true"/>
     </imports>
     <implements/>
-    <fields/>
+    <fields>
+        <variable access="private" type="GreenfootSound" type-java="GreenfootSound" name="gameMusic" enable="true"/>
+    </fields>
     <constructors>
         <comment xml:space="preserve">(World, Actor, GreenfootImage, Greenfoot and MouseInfo)</comment>
         <constructor access="public" enable="true">
@@ -15,15 +16,15 @@
             <throws/>
             <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
             <body>
-                <comment xml:space="preserve">Create a new world with 600x400 cells with a cell size of 1x1 pixels.</comment>
+                <assign dest="gameMusic" dest-java="gameMusic" src="new GreenfootSound(&quot;winning.wav&quot;)" src-java=" new GreenfootSound(&quot;winning.wav&quot;)" enable="true"/>
+                <call expression="gameMusic.play()" expression-java="gameMusic.play()" enable="true"/>
                 <call expression="prepare()" expression-java="prepare()" enable="true"/>
             </body>
         </constructor>
     </constructors>
     <methods>
         <method access="private" type="void" type-java="void" name="prepare" enable="true">
-            <javadoc xml:space="preserve">Prepare the world for the start of the program.
-That is: create the initial objects and add them to the world.</javadoc>
+            <javadoc xml:space="preserve">Prepare the world for the start of the program. That is: create the initial objects and add them to the world.</javadoc>
             <params/>
             <throws/>
             <body>
@@ -38,6 +39,47 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="word.setLocation(362,201)" expression-java="word.setLocation(362, 201)" enable="true"/>
                 <call expression="happyMonkey.setLocation(315,307)" expression-java="happyMonkey.setLocation(315, 307)" enable="true"/>
                 <call expression="word.setLocation(327,213)" expression-java="word.setLocation(327, 213)" enable="true"/>
+                <variable type="WinCup" type-java="WinCup" name="winCup" value="new WinCup()" value-java=" new WinCup()" enable="true"/>
+                <call expression="addObject(winCup,311,121)" expression-java="addObject(winCup, 311, 121)" enable="true"/>
+                <call expression="word.setLocation(369,209)" expression-java="word.setLocation(369, 209)" enable="true"/>
+                <call expression="winCup.setLocation(312,138)" expression-java="winCup.setLocation(312, 138)" enable="true"/>
+                <call expression="happyMonkey.setLocation(320,327)" expression-java="happyMonkey.setLocation(320, 327)" enable="true"/>
+                <call expression="word.setLocation(371,229)" expression-java="word.setLocation(371, 229)" enable="true"/>
+                <call expression="winCup.setLocation(329,168)" expression-java="winCup.setLocation(329, 168)" enable="true"/>
+                <call expression="winCup.setLocation(324,135)" expression-java="winCup.setLocation(324, 135)" enable="true"/>
+                <call expression="word.setLocation(346,245)" expression-java="word.setLocation(346, 245)" enable="true"/>
+                <call expression="happyMonkey.setLocation(312,330)" expression-java="happyMonkey.setLocation(312, 330)" enable="true"/>
+                <call expression="word.setLocation(307,226)" expression-java="word.setLocation(307, 226)" enable="true"/>
+                <call expression="winCup.setLocation(297,146)" expression-java="winCup.setLocation(297, 146)" enable="true"/>
+                <call expression="winCup.setLocation(310,160)" expression-java="winCup.setLocation(310, 160)" enable="true"/>
+                <call expression="word.setLocation(332,223)" expression-java="word.setLocation(332, 223)" enable="true"/>
+                <call expression="winCup.setLocation(328,112)" expression-java="winCup.setLocation(328, 112)" enable="true"/>
+                <call expression="winCup.setLocation(291,122)" expression-java="winCup.setLocation(291, 122)" enable="true"/>
+                <call expression="word.setLocation(285,214)" expression-java="word.setLocation(285, 214)" enable="true"/>
+                <call expression="happyMonkey.setLocation(314,326)" expression-java="happyMonkey.setLocation(314, 326)" enable="true"/>
+                <call expression="word.setLocation(342,210)" expression-java="word.setLocation(342, 210)" enable="true"/>
+                <call expression="word.setLocation(332,234)" expression-java="word.setLocation(332, 234)" enable="true"/>
+                <call expression="word.setLocation(369,218)" expression-java="word.setLocation(369, 218)" enable="true"/>
+                <call expression="winCup.setLocation(297,174)" expression-java="winCup.setLocation(297, 174)" enable="true"/>
+                <call expression="word.setLocation(335,258)" expression-java="word.setLocation(335, 258)" enable="true"/>
+                <call expression="winCup.setLocation(298,150)" expression-java="winCup.setLocation(298, 150)" enable="true"/>
+                <call expression="word.setLocation(297,235)" expression-java="word.setLocation(297, 235)" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="started" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="gameMusic.playLoop()" expression-java="gameMusic.playLoop()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="stopped" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="gameMusic.stop()" expression-java="gameMusic.stop()" enable="true"/>
             </body>
         </method>
     </methods>
