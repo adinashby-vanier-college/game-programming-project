@@ -31,5 +31,12 @@ public class Jungle extends World
         addObject(happyMonkey, 320, 316);
         happyMonkey.setLocation(436, 299);
         happyMonkey.setLocation(315, 320);
+        Word word =  new  Word();
+        addObject(word, 312, 186);
+        word.setLocation(306, 131);
+        word.setLocation(288, 151);
+        word.setLocation(362, 201);
+        happyMonkey.setLocation(315, 307);
+        word.setLocation(327, 213);
     }
 }

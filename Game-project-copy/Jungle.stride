@@ -31,6 +31,13 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(happyMonkey,320,316)" expression-java="addObject(happyMonkey, 320, 316)" enable="true"/>
                 <call expression="happyMonkey.setLocation(436,299)" expression-java="happyMonkey.setLocation(436, 299)" enable="true"/>
                 <call expression="happyMonkey.setLocation(315,320)" expression-java="happyMonkey.setLocation(315, 320)" enable="true"/>
+                <variable type="Word" type-java="Word" name="word" value="new Word()" value-java=" new Word()" enable="true"/>
+                <call expression="addObject(word,312,186)" expression-java="addObject(word, 312, 186)" enable="true"/>
+                <call expression="word.setLocation(306,131)" expression-java="word.setLocation(306, 131)" enable="true"/>
+                <call expression="word.setLocation(288,151)" expression-java="word.setLocation(288, 151)" enable="true"/>
+                <call expression="word.setLocation(362,201)" expression-java="word.setLocation(362, 201)" enable="true"/>
+                <call expression="happyMonkey.setLocation(315,307)" expression-java="happyMonkey.setLocation(315, 307)" enable="true"/>
+                <call expression="word.setLocation(327,213)" expression-java="word.setLocation(327, 213)" enable="true"/>
             </body>
         </method>
     </methods>
