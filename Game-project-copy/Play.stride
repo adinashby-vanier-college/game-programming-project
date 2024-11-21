@@ -16,6 +16,7 @@
             <body>
                 <if condition="Greenfoot.mouseClicked(this)" condition-java="Greenfoot.mouseClicked(this)" enable="true">
                     <ifStatements>
+                        <call expression="Greenfoot.playSound(&quot;startSound.wav&quot;)" expression-java="Greenfoot.playSound(&quot;startSound.wav&quot;)" enable="true"/>
                         <call expression="Greenfoot.setWorld(new Level1())" expression-java="Greenfoot.setWorld( new Level1())" enable="true"/>
                     </ifStatements>
                 </if>

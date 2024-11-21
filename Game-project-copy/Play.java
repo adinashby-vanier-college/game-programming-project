@@ -15,7 +15,8 @@ public class Play extends Actor
     public void act()
     {
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld( new Level1());
+            Greenfoot.playSound("startSound.wav");
+            Greenfoot.setWorld( new  Level1());
         }
     }
 }
