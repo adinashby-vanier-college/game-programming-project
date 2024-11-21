@@ -223,7 +223,9 @@ public class Monkey extends Actor
             }
         }
         if (Greenfoot.isKeyDown("space")) {
+            Greenfoot.playSound("gunShot.wav");
             fireBananaBullet();
+            
         }
     }
 
