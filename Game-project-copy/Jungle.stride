@@ -6,7 +6,7 @@
     </imports>
     <implements/>
     <fields>
-        <variable access="private" type="GreenfootSound" type-java="GreenfootSound" name="gameMusic" enable="true"/>
+        <variable access="public" type="GreenfootSound" type-java="GreenfootSound" name="gameMusic" enable="true"/>
     </fields>
     <constructors>
         <comment xml:space="preserve">(World, Actor, GreenfootImage, Greenfoot and MouseInfo)</comment>
@@ -64,6 +64,12 @@
                 <call expression="word.setLocation(335,258)" expression-java="word.setLocation(335, 258)" enable="true"/>
                 <call expression="winCup.setLocation(298,150)" expression-java="winCup.setLocation(298, 150)" enable="true"/>
                 <call expression="word.setLocation(297,235)" expression-java="word.setLocation(297, 235)" enable="true"/>
+                <variable type="Restart" type-java="Restart" name="restart" value="new Restart()" value-java=" new Restart()" enable="true"/>
+                <call expression="addObject(restart,302,267)" expression-java="addObject(restart, 302, 267)" enable="true"/>
+                <call expression="winCup.setLocation(295,131)" expression-java="winCup.setLocation(295, 131)" enable="true"/>
+                <call expression="word.setLocation(308,197)" expression-java="word.setLocation(308, 197)" enable="true"/>
+                <call expression="restart.setLocation(319,236)" expression-java="restart.setLocation(319, 236)" enable="true"/>
+                <call expression="winCup.setLocation(314,104)" expression-java="winCup.setLocation(314, 104)" enable="true"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="started" enable="true">

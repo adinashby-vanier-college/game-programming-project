@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class Jungle extends World
 {
-    private GreenfootSound gameMusic;
+    public GreenfootSound gameMusic;
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
@@ -17,7 +17,7 @@ public class Jungle extends World
     public Jungle()
     {
         super(600, 400, 1);
-        gameMusic =  new GreenfootSound("winning.wav");
+        gameMusic =  new  GreenfootSound("winning.wav");
         gameMusic.play();
         prepare();
     }
@@ -27,18 +27,18 @@ public class Jungle extends World
      */
     private void prepare()
     {
-        HappyMonkey happyMonkey =  new HappyMonkey();
+        HappyMonkey happyMonkey =  new  HappyMonkey();
         addObject(happyMonkey, 320, 316);
         happyMonkey.setLocation(436, 299);
         happyMonkey.setLocation(315, 320);
-        Word word =  new Word();
+        Word word =  new  Word();
         addObject(word, 312, 186);
         word.setLocation(306, 131);
         word.setLocation(288, 151);
         word.setLocation(362, 201);
         happyMonkey.setLocation(315, 307);
         word.setLocation(327, 213);
-        WinCup winCup =  new WinCup();
+        WinCup winCup =  new  WinCup();
         addObject(winCup, 311, 121);
         word.setLocation(369, 209);
         winCup.setLocation(312, 138);
@@ -63,6 +63,12 @@ public class Jungle extends World
         word.setLocation(335, 258);
         winCup.setLocation(298, 150);
         word.setLocation(297, 235);
+        Restart restart =  new  Restart();
+        addObject(restart, 302, 267);
+        winCup.setLocation(295, 131);
+        word.setLocation(308, 197);
+        restart.setLocation(319, 236);
+        winCup.setLocation(314, 104);
     }
 
     /**

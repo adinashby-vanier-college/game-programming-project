@@ -15,7 +15,7 @@ public class GameOver extends Actor
     public void act()
     {
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld( new Lab());
+            Greenfoot.setWorld( new  Lab());
         }
     }
 }
