@@ -198,6 +198,8 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="bB.setLocation(747,231)" expression-java="bB.setLocation(747, 231)" enable="true"/>
                 <call expression="bB.setLocation(858,129)" expression-java="bB.setLocation(858, 129)" enable="true"/>
                 <call expression="bB.setLocation(842,109)" expression-java="bB.setLocation(842, 109)" enable="true"/>
+                <variable type="Monkey2" type-java="Monkey2" name="monkey2" value="new Monkey2()" value-java=" new Monkey2()" enable="true"/>
+                <call expression="addObject(monkey2,76,397)" expression-java="addObject(monkey2, 76, 397)" enable="true"/>
             </body>
         </method>
     </methods>

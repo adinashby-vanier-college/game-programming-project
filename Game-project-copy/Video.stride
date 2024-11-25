@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Video" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="public" type="GreenfootSound" type-java="GreenfootSound" name="audio" enable="true"/>
+        <variable access="protected" type="GifImage" type-java="GifImage" name="video" value="new GifImage(&quot;video.gif&quot;)" value-java=" new GifImage(&quot;video.gif&quot;)" enable="true"/>
+    </fields>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Video.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <assign dest="audio" dest-java="audio" src="new GreenfootSound(&quot;Final.wav&quot;)" src-java=" new GreenfootSound(&quot;Final.wav&quot;)" enable="true"/>
+                <call expression="audio.play()" expression-java="audio.play()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="playVideo" enable="true">
+            <javadoc xml:space="preserve">make gif play</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="setBackground(video.getCurrentImage())" expression-java="setBackground(video.getCurrentImage())" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="playVideo()" expression-java="playVideo()" enable="true"/>
+                <if condition="!audio.isPlaying()" condition-java=" ! audio.isPlaying()" enable="true">
+                    <ifStatements>
+                        <call expression="Greenfoot.setWorld(new Level3())" expression-java="Greenfoot.setWorld( new Level3())" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="playAudio" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body/>
+        </method>
+    </methods>
+</class>
