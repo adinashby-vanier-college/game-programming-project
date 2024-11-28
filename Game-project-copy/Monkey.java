@@ -23,7 +23,8 @@ public class Monkey extends Actor
     {
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
-        powerUp();
+        BPowerUp();
+        VPowerUp();
         //addObject();
     
     }
@@ -264,17 +265,27 @@ public class Monkey extends Actor
         getWorld().addObject(BB, getX(), getY());
         reloadDelayCount = 0;
     }
-    public void powerUp(){
+    public void BPowerUp(){
         Actor banana = getOneIntersectingObject(Banana.class);
         if (banana !=null){
             World world = getWorld();
             world.removeObject(banana);
-            do {   
             setImage("primate194_100.png");
-            timer++;}
-            while(timer <= transitionTime);
+            timer++;
+            if(timer >= transitionTime){
+                setImage("primate194_small.png"); 
         }
     }
+    }
+    public void VPowerUp(){
+        Actor vial = getOneIntersectingObject(Vial.class);
+        if (vial !=null){
+            World world = getWorld();
+            world.removeObject(vial);
+            setGunReloadTime(5);
+        }
+    }
+
     /*public void addObject(){
         Actor banana = getOneIntersectingObject(Banana.class);
         if (banana != null){
@@ -288,3 +299,4 @@ public class Monkey extends Actor
     }*/
 
 }
+
