@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.BB.image=bigboss_200.gif
+class.BB1.image=bigboss_200.gif
 class.Banana.image=banana_55.png
 class.BananaBullet.image=smallbananaBullet.png
 class.BlackWall.image=blackWall2.png
@@ -29,6 +30,7 @@ class.Level3.image=Level3.png
 class.Monkey.image=primate194_small.png
 class.Monkey2.image=primate194_100.png
 class.Play.image=Play_button.png
+class.Poison.image=green-liquid-bottle-processed\ (1)_processed.png
 class.PowerUpBox.image=box_83.jpg
 class.Restart.image=Restart.png
 class.SadMonkey.image=SadMonkey_100.png
@@ -240,6 +242,7 @@ dependency4.from=Lab
 dependency4.to=Monkey
 dependency4.type=UsesDependency
 dependency40.from=Level3
+<<<<<<< HEAD
 dependency40.to=BB
 dependency40.type=UsesDependency
 dependency41.from=Level3
@@ -268,11 +271,42 @@ dependency48.to=Chair2
 dependency48.type=UsesDependency
 dependency49.from=Level1
 dependency49.to=F2
+=======
+dependency40.to=Monkey2
+dependency40.type=UsesDependency
+dependency41.from=Level1
+dependency41.to=Security
+dependency41.type=UsesDependency
+dependency42.from=Level1
+dependency42.to=BlackWall
+dependency42.type=UsesDependency
+dependency43.from=Level1
+dependency43.to=Bwall
+dependency43.type=UsesDependency
+dependency44.from=Level1
+dependency44.to=F1
+dependency44.type=UsesDependency
+dependency45.from=Level1
+dependency45.to=Desk
+dependency45.type=UsesDependency
+dependency46.from=Level1
+dependency46.to=Chair1
+dependency46.type=UsesDependency
+dependency47.from=Level1
+dependency47.to=Chair2
+dependency47.type=UsesDependency
+dependency48.from=Level1
+dependency48.to=F2
+dependency48.type=UsesDependency
+dependency49.from=Level1
+dependency49.to=F3
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 dependency49.type=UsesDependency
 dependency5.from=Lab
 dependency5.to=BB
 dependency5.type=UsesDependency
 dependency50.from=Level1
+<<<<<<< HEAD
 dependency50.to=F3
 dependency50.type=UsesDependency
 dependency51.from=Level1
@@ -300,12 +334,42 @@ dependency58.from=PowerUpBox
 dependency58.to=Vial
 dependency58.type=UsesDependency
 dependency59.from=PowerUpBox
+=======
+dependency50.to=F4
+dependency50.type=UsesDependency
+dependency51.from=Level1
+dependency51.to=Wall
+dependency51.type=UsesDependency
+dependency52.from=Level1
+dependency52.to=Key
+dependency52.type=UsesDependency
+dependency53.from=Level1
+dependency53.to=Desk1
+dependency53.type=UsesDependency
+dependency54.from=Level1
+dependency54.to=F6
+dependency54.type=UsesDependency
+dependency55.from=Level1
+dependency55.to=Monkey
+dependency55.type=UsesDependency
+dependency56.from=PowerUpBox
+dependency56.to=Banana
+dependency56.type=UsesDependency
+dependency57.from=PowerUpBox
+dependency57.to=Vial
+dependency57.type=UsesDependency
+dependency58.from=PowerUpBox
+dependency58.to=BananaBullet
+dependency58.type=UsesDependency
+dependency59.from=Monkey
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 dependency59.to=BananaBullet
 dependency59.type=UsesDependency
 dependency6.from=Lab
 dependency6.to=Security
 dependency6.type=UsesDependency
 dependency60.from=Monkey
+<<<<<<< HEAD
 dependency60.to=BananaBullet
 dependency60.type=UsesDependency
 dependency61.from=Monkey
@@ -334,11 +398,42 @@ dependency68.to=Desk
 dependency68.type=UsesDependency
 dependency69.from=Monkey
 dependency69.to=Desk1
+=======
+dependency60.to=Monkey2
+dependency60.type=UsesDependency
+dependency61.from=Monkey
+dependency61.to=BlackWall
+dependency61.type=UsesDependency
+dependency62.from=Monkey
+dependency62.to=Bwall
+dependency62.type=UsesDependency
+dependency63.from=Monkey
+dependency63.to=Chair1
+dependency63.type=UsesDependency
+dependency64.from=Monkey
+dependency64.to=Chair2
+dependency64.type=UsesDependency
+dependency65.from=Monkey
+dependency65.to=Desk
+dependency65.type=UsesDependency
+dependency66.from=Monkey
+dependency66.to=Desk1
+dependency66.type=UsesDependency
+dependency67.from=Monkey
+dependency67.to=F1
+dependency67.type=UsesDependency
+dependency68.from=Monkey
+dependency68.to=F2
+dependency68.type=UsesDependency
+dependency69.from=Monkey
+dependency69.to=F3
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 dependency69.type=UsesDependency
 dependency7.from=Lab
 dependency7.to=Play
 dependency7.type=UsesDependency
 dependency70.from=Monkey
+<<<<<<< HEAD
 dependency70.to=F1
 dependency70.type=UsesDependency
 dependency71.from=Monkey
@@ -367,10 +462,41 @@ dependency78.to=Wall
 dependency78.type=UsesDependency
 dependency79.from=Monkey
 dependency79.to=Banana
+=======
+dependency70.to=F4
+dependency70.type=UsesDependency
+dependency71.from=Monkey
+dependency71.to=F5
+dependency71.type=UsesDependency
+dependency72.from=Monkey
+dependency72.to=F6
+dependency72.type=UsesDependency
+dependency73.from=Monkey
+dependency73.to=F7
+dependency73.type=UsesDependency
+dependency74.from=Monkey
+dependency74.to=F8
+dependency74.type=UsesDependency
+dependency75.from=Monkey
+dependency75.to=Wall
+dependency75.type=UsesDependency
+dependency76.from=Monkey
+dependency76.to=Banana
+dependency76.type=UsesDependency
+dependency77.from=Restart
+dependency77.to=Lab
+dependency77.type=UsesDependency
+dependency78.from=Restart
+dependency78.to=Jungle
+dependency78.type=UsesDependency
+dependency79.from=Security
+dependency79.to=BananaBullet
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 dependency79.type=UsesDependency
 dependency8.from=Lab
 dependency8.to=Title
 dependency8.type=UsesDependency
+<<<<<<< HEAD
 dependency80.from=Restart
 dependency80.to=Lab
 dependency80.type=UsesDependency
@@ -400,10 +526,42 @@ dependency88.to=Desk
 dependency88.type=UsesDependency
 dependency89.from=Security
 dependency89.to=Desk1
+=======
+dependency80.from=GameOver
+dependency80.to=Lab
+dependency80.type=UsesDependency
+dependency81.from=Play
+dependency81.to=Level1
+dependency81.type=UsesDependency
+dependency82.from=Monkey2
+dependency82.to=BananaBullet
+dependency82.type=UsesDependency
+dependency83.from=Monkey2
+dependency83.to=BlackWall
+dependency83.type=UsesDependency
+dependency84.from=Monkey2
+dependency84.to=Bwall
+dependency84.type=UsesDependency
+dependency85.from=Monkey2
+dependency85.to=Chair1
+dependency85.type=UsesDependency
+dependency86.from=Monkey2
+dependency86.to=Chair2
+dependency86.type=UsesDependency
+dependency87.from=Monkey2
+dependency87.to=Desk
+dependency87.type=UsesDependency
+dependency88.from=Monkey2
+dependency88.to=Desk1
+dependency88.type=UsesDependency
+dependency89.from=Monkey2
+dependency89.to=F1
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 dependency89.type=UsesDependency
 dependency9.from=Lab
 dependency9.to=Security4PlayScreen
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 dependency90.from=Security
 dependency90.to=F1
 dependency90.type=UsesDependency
@@ -445,6 +603,39 @@ editor.fx.1.y=184
 height=1048
 package.numDependencies=131
 package.numTargets=44
+=======
+dependency90.from=Monkey2
+dependency90.to=F2
+dependency90.type=UsesDependency
+dependency91.from=Monkey2
+dependency91.to=F3
+dependency91.type=UsesDependency
+dependency92.from=Monkey2
+dependency92.to=F4
+dependency92.type=UsesDependency
+dependency93.from=Monkey2
+dependency93.to=F5
+dependency93.type=UsesDependency
+dependency94.from=Monkey2
+dependency94.to=F6
+dependency94.type=UsesDependency
+dependency95.from=Monkey2
+dependency95.to=F7
+dependency95.type=UsesDependency
+dependency96.from=Monkey2
+dependency96.to=F8
+dependency96.type=UsesDependency
+dependency97.from=Monkey2
+dependency97.to=Wall
+dependency97.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=744
+package.numDependencies=97
+package.numTargets=45
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -656,7 +847,11 @@ target34.width=120
 target34.x=0
 target34.y=0
 target35.height=70
+<<<<<<< HEAD
 target35.name=Play
+=======
+target35.name=BB1
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 target35.showInterface=false
 target35.type=ClassTarget
 target35.width=120
@@ -719,19 +914,37 @@ target42.width=120
 target42.x=0
 target42.y=0
 target43.height=70
+<<<<<<< HEAD
 target43.name=Level1
+=======
+target43.name=Poison
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 target43.showInterface=false
 target43.type=ClassTarget
 target43.width=120
 target43.x=0
 target43.y=0
 target44.height=70
+<<<<<<< HEAD
 target44.name=Key
+=======
+target44.name=Level1
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 target44.showInterface=false
 target44.type=ClassTarget
 target44.width=120
 target44.x=0
 target44.y=0
+<<<<<<< HEAD
+=======
+target45.height=70
+target45.name=Key
+target45.showInterface=false
+target45.type=ClassTarget
+target45.width=120
+target45.x=0
+target45.y=0
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
 target5.height=70
 target5.name=Monkey
 target5.showInterface=false
@@ -768,7 +981,14 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.1.0
+<<<<<<< HEAD
 width=1936
 world.lastInstantiated=Level1
 xPosition=0
 yPosition=0
+=======
+width=1382
+world.lastInstantiated=Lab
+xPosition=181
+yPosition=94
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae

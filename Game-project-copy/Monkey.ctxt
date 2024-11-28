@@ -19,6 +19,7 @@ comment6.params=reloadTime
 comment6.target=void\ setGunReloadTime(int)
 comment6.text=\r\n\ \r\n
 comment7.params=
+<<<<<<< HEAD
 comment7.target=void\ fireBananaBullet()
 comment7.text=\r\n\ \r\n
 comment8.params=
@@ -26,3 +27,9 @@ comment8.target=void\ eat()
 comment9.params=
 comment9.target=void\ addObject()
 numComments=10
+=======
+comment7.target=void\ BPowerUp()
+comment8.params=
+comment8.target=void\ VPowerUp()
+numComments=9
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
