@@ -279,5 +279,14 @@ public class Level1 extends World
         desk1.setLocation(305, 128);
         desk1.setLocation(271, 97);
         f22.setLocation(182, 419);
+        security2.setLocation(315, 384);
+        security.setLocation(682, 179);
+        security3.setLocation(566, 362);
+        security3.setLocation(582, 407);
+        security2.setLocation(323, 209);
+        security2.setLocation(328, 211);
+        removeObject(security2);
+        Security security2 =  new  Security();
+        addObject(security2, 312, 227);
     }
 }

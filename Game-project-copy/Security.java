@@ -7,8 +7,8 @@ import greenfoot.*;
 public class Security extends Actor
 {
     private int hitCount = 0;
-    private int speed = 3;
-
+    private int direction = 3;
+    
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
     /**
@@ -16,14 +16,42 @@ public class Security extends Actor
      */
     public void act()
     {
-        if (isTouching(BananaBullet.class))
-        {hitCount++;
-            removeTouching(BananaBullet.class);
-            if(hitCount>=2){
-                getWorld().removeObject(this);}
-            }
+       removeSecurity();
+        shootBulletRandomly();
+        moveRandomly();
+        changeDirectionRandomly();
         
         }
+    public void removeSecurity(){
+       if (isTouching(BananaBullet.class)) 
+        {   removeTouching(BananaBullet.class);
+            ++hitCount;
+          if(hitCount==2)
+            getWorld().removeObject(this);
+        }  
+    }
+    private void shootBulletRandomly(){
+        if( Greenfoot.getRandomNumber(400)< 3){
+            Bullet bullet = new Bullet();
+            getWorld().addObject(bullet, getX(), getY());
+            bullet.setRotation(getRotation());
+            
+        }
+    }
+    private void moveRandomly(){
+        setLocation(getX(),getY()+ direction);
+        if (isTouching(BlackWall.class) || (isTouching(Chair1.class))|| (isTouching(Chair2.class))||(isTouching(Bwall.class))||
+        (isTouching(Desk.class))|| (isTouching(Desk1.class))|| (isTouching(F1.class))||(isTouching(F2.class))||(isTouching(F3.class))|| (isTouching(F4.class))||
+        (isTouching(F5.class))||(isTouching(F6.class))||(isTouching(F7.class))||(isTouching(F8.class))||(isTouching(Wall.class))){
+            direction = -direction;
+        } 
+    }
+    
+    private void changeDirectionRandomly(){
+        if (Greenfoot.getRandomNumber(50) < 1){
+            direction= -direction;
+        }
+    }
 
     }
 

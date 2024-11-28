@@ -82,5 +82,21 @@ public class Lab extends World
         bB.setLocation(512, 300);
         bB.setLocation(514, 308);
         bB.setLocation(515, 292);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        removeObject(security);
+        bB.setLocation(424, 337);
+        Security4PlayScreen security4PlayScreen =  new  Security4PlayScreen();
+        addObject(security4PlayScreen, 424, 337);
+        bB.setLocation(320, 312);
+        bB.setLocation(512, 284);
+        security4PlayScreen.setLocation(398, 346);
+=======
+        removeObject(bB);
+        BB1 bB1 =  new  BB1();
+        addObject(bB1, 526, 303);
+>>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
+>>>>>>> c2227be41867ce11573fe86f5d40410342ea1f9f
     }
 }
