@@ -8,7 +8,7 @@ import greenfoot.*;
 public class SplashScreen extends World
 {
     private int timer = 0;
-    private final int transitionTime = 200;
+    private final int transitionTime = 120;
     /**
      * Constructor for objects of class SplashScreen.
      */

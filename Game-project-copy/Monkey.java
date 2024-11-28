@@ -11,6 +11,8 @@ public class Monkey extends Actor
     private int reloadDelayCount = 0;
     private BananaBullet BB =  new  BananaBullet();
     int Monkey2;
+    private int timer = 0;
+    private int transitionTime = 5;
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
@@ -21,8 +23,9 @@ public class Monkey extends Actor
     {
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
-        eat();
-        addObject();
+        powerUp();
+        //addObject();
+    
     }
 
     /**
@@ -261,14 +264,18 @@ public class Monkey extends Actor
         getWorld().addObject(BB, getX(), getY());
         reloadDelayCount = 0;
     }
-    public void eat(){
+    public void powerUp(){
         Actor banana = getOneIntersectingObject(Banana.class);
         if (banana !=null){
             World world = getWorld();
             world.removeObject(banana);
+            do {   
+            setImage("primate194_100.png");
+            timer++;}
+            while(timer <= transitionTime);
         }
     }
-    public void addObject(){
+    /*public void addObject(){
         Actor banana = getOneIntersectingObject(Banana.class);
         if (banana != null){
             World world = getWorld();
@@ -278,5 +285,6 @@ public class Monkey extends Actor
             world.removeObject(banana);
             world.addObject(new Monkey2(), xLocation, yLocation);
         }
-    }
+    }*/
+
 }

@@ -5,7 +5,7 @@ import greenfoot.*;
  * Write a description of class Monkey2 here.
  * @author (your name) @version (a version number or a date)
  */
-public class Monkey2 extends Actor
+public class Monkey2 extends Monkey
 {
     private int speed = 3;
     private int gunReloadTime = 20;
