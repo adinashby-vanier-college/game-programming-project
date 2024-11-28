@@ -24,16 +24,16 @@ public class Lab extends World
      */
     private void prepare()
     {
-        Monkey monkey =  new Monkey();
+        Monkey monkey =  new  Monkey();
         addObject(monkey, 165, 336);
-        BB bB =  new BB();
+        BB bB =  new  BB();
         addObject(bB, 489, 284);
         monkey.setLocation(163, 342);
         monkey.setLocation(173, 343);
         bB.setLocation(401, 337);
-        Security security =  new Security();
+        Security security =  new  Security();
         addObject(security, 401, 337);
-        Play play =  new Play();
+        Play play =  new  Play();
         addObject(play, 315, 225);
         play.setLocation(283, 228);
         bB.setLocation(388, 344);
@@ -56,7 +56,7 @@ public class Lab extends World
         bB.setLocation(516, 293);
         play.setLocation(293, 209);
         monkey.setLocation(137, 335);
-        Title title =  new Title();
+        Title title =  new  Title();
         addObject(title, 308, 91);
         title.setLocation(387, 104);
         play.setLocation(317, 247);
@@ -82,5 +82,12 @@ public class Lab extends World
         bB.setLocation(512, 300);
         bB.setLocation(514, 308);
         bB.setLocation(515, 292);
+        removeObject(security);
+        bB.setLocation(424, 337);
+        Security4PlayScreen security4PlayScreen =  new  Security4PlayScreen();
+        addObject(security4PlayScreen, 424, 337);
+        bB.setLocation(320, 312);
+        bB.setLocation(512, 284);
+        security4PlayScreen.setLocation(398, 346);
     }
 }

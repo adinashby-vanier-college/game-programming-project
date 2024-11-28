@@ -83,6 +83,13 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="bB.setLocation(512,300)" expression-java="bB.setLocation(512, 300)" enable="true"/>
                 <call expression="bB.setLocation(514,308)" expression-java="bB.setLocation(514, 308)" enable="true"/>
                 <call expression="bB.setLocation(515,292)" expression-java="bB.setLocation(515, 292)" enable="true"/>
+                <call expression="removeObject(security)" expression-java="removeObject(security)" enable="true"/>
+                <call expression="bB.setLocation(424,337)" expression-java="bB.setLocation(424, 337)" enable="true"/>
+                <variable type="Security4PlayScreen" type-java="Security4PlayScreen" name="security4PlayScreen" value="new Security4PlayScreen()" value-java=" new Security4PlayScreen()" enable="true"/>
+                <call expression="addObject(security4PlayScreen,424,337)" expression-java="addObject(security4PlayScreen, 424, 337)" enable="true"/>
+                <call expression="bB.setLocation(320,312)" expression-java="bB.setLocation(320, 312)" enable="true"/>
+                <call expression="bB.setLocation(512,284)" expression-java="bB.setLocation(512, 284)" enable="true"/>
+                <call expression="security4PlayScreen.setLocation(398,346)" expression-java="security4PlayScreen.setLocation(398, 346)" enable="true"/>
             </body>
         </method>
     </methods>
