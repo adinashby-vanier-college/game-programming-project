@@ -1,17 +1,71 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class BB here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class BB extends Actor
 {
-    
-    public void act()
+    private int moveCounter = 0;  // Counter to track the up/down movement
+    private int throwCounter = 0;  // Counter to track poison throw timing
+    private boolean movingUp = false;  // Start by moving down
+    private int hitCounter = 0;  // Counter to track the number of hits by BananaBullet
+
+    public void act() 
     {
-       
+        moveUpAndDown();
+        throwPoison();
+        checkForBananaBullet();  // Check for collisions with BananaBullet
     }
-    
+
+    private void moveUpAndDown()
+    {
+        moveCounter++;
+        
+        // Change direction every 3.5 seconds (60 frames per second * 3.5 seconds = 210 frames)
+        if (moveCounter % 210 == 0)
+        {
+            movingUp = !movingUp;  // Reverse direction every 3.5 seconds
+        }
+        
+        if (movingUp)
+        {
+            setLocation(getX(), getY() - 1);  // Move up
+        }
+        else
+        {
+            setLocation(getX(), getY() + 1);  // Move down
+        }
+    }
+
+    private void throwPoison()
+    {
+        throwCounter++;
+        
+        // Throw poison every 2 seconds (60 frames per second * 2 seconds = 120 frames)
+        if (throwCounter % 120 == 0)
+        {
+            Poison poison = new Poison();
+            getWorld().addObject(poison, getX(), getY());  // Throw poison at BB's current position
+        }
+    }
+
+    // Check if BB is hit by a BananaBullet
+    private void checkForBananaBullet()
+    {
+        BananaBullet bananaBullet = (BananaBullet) getOneIntersectingObject(BananaBullet.class);  // Check for collision with BananaBullet
+        
+        if (bananaBullet != null)
+        {
+            hitCounter++;  // Increment hit counter if collision is detected
+            
+            // Remove the BananaBullet from the world after it hits BB
+            getWorld().removeObject(bananaBullet);
+            
+            if (hitCounter >= 15)  // If BB has been hit 15 times, remove BB
+            {
+                getWorld().removeObject(this);  // BB dies (gets removed from the world)
+            }
+        }
+    }
 }
+
+
+
+

@@ -83,6 +83,9 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="bB.setLocation(512,300)" expression-java="bB.setLocation(512, 300)" enable="true"/>
                 <call expression="bB.setLocation(514,308)" expression-java="bB.setLocation(514, 308)" enable="true"/>
                 <call expression="bB.setLocation(515,292)" expression-java="bB.setLocation(515, 292)" enable="true"/>
+                <call expression="removeObject(bB)" expression-java="removeObject(bB)" enable="true"/>
+                <variable type="BB1" type-java="BB1" name="bB1" value="new BB1()" value-java=" new BB1()" enable="true"/>
+                <call expression="addObject(bB1,526,303)" expression-java="addObject(bB1, 526, 303)" enable="true"/>
             </body>
         </method>
     </methods>
