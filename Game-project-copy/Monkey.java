@@ -9,14 +9,21 @@ public class Monkey extends Actor
     private int speed = 3;
     private int gunReloadTime = 20;
     private int reloadDelayCount = 0;
-    private BananaBullet BB =  new  BananaBullet();
+    private BananaBullet BB =  new  BananaBullet(this);
     int Monkey2;
     private int timer = 0;
     private int transitionTime = 5;
     private int health = 5;
+    public boolean isFacingRight = true;
+    private GreenfootImage imageRight = new GreenfootImage(getImage());
+    private GreenfootImage imageLeft = new GreenfootImage(imageRight);
+        
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
-
+    public Monkey(){
+        imageLeft.mirrorHorizontally();
+        setImage(imageRight);
+    }
     /**
      * Act - do whatever the Monkey wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
@@ -26,6 +33,7 @@ public class Monkey extends Actor
         reloadDelayCount = reloadDelayCount + 1;
         BPowerUp();
         VPowerUp();
+        fixImageDirection();
         //addObject();
         BulletCollision();
     }
@@ -46,99 +54,101 @@ public class Monkey extends Actor
     public void checkKeyPress()
     {
         if (Greenfoot.isKeyDown("left")) {
-            move(-3);
+            setLocation(getX() - speed, getY());
+            isFacingRight = false;
             if (isTouching(BlackWall.class)) {
-                move(3);
+                move(speed);
             }
             if (isTouching(Bwall.class)) {
-                move(3);
+                move(speed);
             }
             if (isTouching(Chair1.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(Chair2.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(Desk.class)){
-                move(3);
+                move(speed);
             }
               if (isTouching(Desk1.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(F1.class)) {
-                move(3);
+                move(speed);
             }
             if (isTouching(F2.class)) {
-                move(3);
+                move(speed);
             }
             if (isTouching(F3.class)) {
-                move(3);
+                move(speed);
             }
             if (isTouching(F4.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(F5.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(F6.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(F7.class)){
-                move(3);
+                move(speed);
             }
             if (isTouching(F8.class)){
-                move(3);
+                move(speed);
             }
               if (isTouching(Wall.class)){
-                move(3);
+                move(speed);
             }
         }
         if (Greenfoot.isKeyDown("right")) {
-            move(3);
+            setLocation(getX() + speed, getY());
+            isFacingRight = true;
             if (isTouching(BlackWall.class)) {
-                move(-3);
+                move(-speed);
             }
             if (isTouching(Bwall.class)) {
-                move(-3);
+                move(-speed);
             }
             if (isTouching(Chair1.class)){
-                move(-3);
+                move(-speed);
             }
-             if (isTouching(Chair2.class)){
-                move(-3);
+            if (isTouching(Chair2.class)){
+                move(-speed);
             }
             if (isTouching(Desk.class)){
-                move(-3);
+                move(-speed);
             }
               if (isTouching(Desk1.class)){
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F1.class)) {
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F2.class)) {
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F3.class)) {
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F4.class)){
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F5.class)){
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F6.class)){
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F7.class)){
-                move(-3);
+                move(-speed);
             }
             if (isTouching(F8.class)){
-                move(-3);
+                move(-speed);
             }
-               if (isTouching(Wall.class)){
-                move(-3);
+              if (isTouching(Wall.class)){
+                move(-speed);
             }
         }
         if (Greenfoot.isKeyDown("up")) {
@@ -296,7 +306,16 @@ public class Monkey extends Actor
             setGunReloadTime(5);
         }
     }
-
+    
+    public void fixImageDirection(){
+        
+        
+        if(isFacingRight){
+            setImage(imageRight);
+        }else{
+            setImage(imageLeft);
+        }
+    }
     /*public void addObject(){
         Actor banana = getOneIntersectingObject(Banana.class);
         if (banana != null){
