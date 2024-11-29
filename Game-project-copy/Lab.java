@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -85,5 +84,8 @@ public class Lab extends World
         removeObject(bB);
         BB1 bB1 =  new  BB1();
         addObject(bB1, 526, 303);
+        removeObject(security);
+        S4PlayScreen s4PlayScreen = new S4PlayScreen();
+        addObject(s4PlayScreen,411,341);
     }
 }

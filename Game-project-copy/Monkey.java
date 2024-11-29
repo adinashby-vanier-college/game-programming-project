@@ -13,6 +13,7 @@ public class Monkey extends Actor
     int Monkey2;
     private int timer = 0;
     private int transitionTime = 5;
+    private int health = 5;
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
@@ -26,9 +27,19 @@ public class Monkey extends Actor
         BPowerUp();
         VPowerUp();
         //addObject();
-    
+        BulletCollision();
     }
-
+    private void BulletCollision(){
+        Bullet bullet = (Bullet) getOneIntersectingObject(Bullet.class);
+        if (bullet != null){
+            health--; 
+            getWorld().removeObject(bullet);
+            //Greenfoot.playSound("OOf.mp3");
+            if (health <= 0){
+                Greenfoot.setWorld(new GameOverWorld());
+            }
+        }
+    }
     /**
      * 
      */
