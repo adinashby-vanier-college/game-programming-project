@@ -11,8 +11,8 @@ public class Monkey extends Actor
     private int reloadDelayCount = 0;
     private BananaBullet BB =  new  BananaBullet();
     int Monkey2;
-    private GreenfootImage originalImage;
-    private int counter;
+    private int timer = 0;
+    private int transitionTime = 5;
 
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
 
@@ -270,10 +270,11 @@ public class Monkey extends Actor
         if (banana !=null){
             World world = getWorld();
             world.removeObject(banana);
-            changeImageTemp();
-            if(counter >= 210){
-                setImage("primate194_small.png");
-            }
+            setImage("primate194_100.png");
+            timer++;
+            if(timer >= transitionTime){
+                setImage("primate194_small.png"); 
+        }
     }
     }
     public void VPowerUp(){
@@ -284,15 +285,6 @@ public class Monkey extends Actor
             setGunReloadTime(5);
         }
     }
-    public void changeImageTemp(){
-        counter = 1;
-        do{
-            setImage("primate194_100.png");
-            counter++;
-        }
-        while(counter < 211);
-            }
-        }
 
     /*public void addObject(){
         Actor banana = getOneIntersectingObject(Banana.class);
@@ -306,5 +298,5 @@ public class Monkey extends Actor
         }
     }*/
 
-
+}
 
