@@ -5,37 +5,24 @@ comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Monkey\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
-comment2.target=void\ BulletCollision()
+comment2.target=void\ checkKeyPress()
+comment2.text=\r\n\ \r\n
 comment3.params=
-comment3.target=void\ checkKeyPress()
+comment3.target=void\ moveUp()
 comment3.text=\r\n\ \r\n
 comment4.params=
-comment4.target=void\ moveUp()
+comment4.target=void\ moveDown()
 comment4.text=\r\n\ \r\n
-comment5.params=
-comment5.target=void\ moveDown()
+comment5.params=reloadTime
+comment5.target=void\ setGunReloadTime(int)
 comment5.text=\r\n\ \r\n
-comment6.params=reloadTime
-comment6.target=void\ setGunReloadTime(int)
+comment6.params=
+comment6.target=void\ fireBananaBullet()
 comment6.text=\r\n\ \r\n
 comment7.params=
-<<<<<<< HEAD
-comment7.target=void\ fireBananaBullet()
-comment7.text=\r\n\ \r\n
-comment8.params=
-comment8.target=void\ eat()
-comment9.params=
-comment9.target=void\ addObject()
-numComments=10
-=======
 comment7.target=void\ BPowerUp()
 comment8.params=
 comment8.target=void\ VPowerUp()
-<<<<<<< HEAD
 comment9.params=
 comment9.target=void\ changeImageTemp()
 numComments=10
-=======
-numComments=9
->>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
->>>>>>> c2227be41867ce11573fe86f5d40410342ea1f9f

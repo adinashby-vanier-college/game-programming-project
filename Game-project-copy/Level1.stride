@@ -281,15 +281,6 @@
                 <call expression="desk1.setLocation(305,128)" expression-java="desk1.setLocation(305, 128)" enable="true"/>
                 <call expression="desk1.setLocation(271,97)" expression-java="desk1.setLocation(271, 97)" enable="true"/>
                 <call expression="f22.setLocation(182,419)" expression-java="f22.setLocation(182, 419)" enable="true"/>
-                <call expression="security2.setLocation(315,384)" expression-java="security2.setLocation(315, 384)" enable="true"/>
-                <call expression="security.setLocation(682,179)" expression-java="security.setLocation(682, 179)" enable="true"/>
-                <call expression="security3.setLocation(566,362)" expression-java="security3.setLocation(566, 362)" enable="true"/>
-                <call expression="security3.setLocation(582,407)" expression-java="security3.setLocation(582, 407)" enable="true"/>
-                <call expression="security2.setLocation(323,209)" expression-java="security2.setLocation(323, 209)" enable="true"/>
-                <call expression="security2.setLocation(328,211)" expression-java="security2.setLocation(328, 211)" enable="true"/>
-                <call expression="removeObject(security2)" expression-java="removeObject(security2)" enable="true"/>
-                <variable type="Security" type-java="Security" name="security2" value="new Security()" value-java=" new Security()" enable="true"/>
-                <call expression="addObject(security2,312,227)" expression-java="addObject(security2, 312, 227)" enable="true"/>
             </body>
         </method>
     </methods>

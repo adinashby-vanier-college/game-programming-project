@@ -10,7 +10,6 @@ public class Monkey extends Actor
     private int gunReloadTime = 20;
     private int reloadDelayCount = 0;
     private BananaBullet BB =  new  BananaBullet();
-    private int health = 5;
     int Monkey2;
     private GreenfootImage originalImage;
     private int counter;
@@ -24,28 +23,12 @@ public class Monkey extends Actor
     {
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
-<<<<<<< HEAD
-        eat();
-        addObject();
-        BulletCollision();
-    }
-    private void BulletCollision(){
-        Bullet bullet = (Bullet) getOneIntersectingObject(Bullet.class);
-        if (bullet != null){
-            health--; 
-            getWorld().removeObject(bullet);
-            Greenfoot.playSound("OOf.mp3");
-            if (health <= 0){
-                Greenfoot.setWorld(new GameOverWorld());
-            }
-        }
-=======
         BPowerUp();
         VPowerUp();
         //addObject();
     
->>>>>>> 74e20cd1da0a69316764222a0301323ac8c69dae
     }
+
     /**
      * 
      */

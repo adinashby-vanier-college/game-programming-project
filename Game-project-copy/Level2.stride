@@ -189,17 +189,6 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(security6,825,279)" expression-java="addObject(security6, 825, 279)" enable="true"/>
                 <variable type="Security" type-java="Security" name="security7" value="new Security()" value-java=" new Security()" enable="true"/>
                 <call expression="addObject(security7,913,402)" expression-java="addObject(security7, 913, 402)" enable="true"/>
-                <call expression="removeObject(security)" expression-java="removeObject(security)" enable="true"/>
-                <call expression="security3.setLocation(163,267)" expression-java="security3.setLocation(163, 267)" enable="true"/>
-                <call expression="security2.setLocation(415,431)" expression-java="security2.setLocation(415, 431)" enable="true"/>
-                <call expression="removeObject(security5)" expression-java="removeObject(security5)" enable="true"/>
-                <call expression="security2.setLocation(417,361)" expression-java="security2.setLocation(417, 361)" enable="true"/>
-                <call expression="security4.setLocation(628,466)" expression-java="security4.setLocation(628, 466)" enable="true"/>
-                <call expression="security6.setLocation(791,267)" expression-java="security6.setLocation(791, 267)" enable="true"/>
-                <call expression="security7.setLocation(865,414)" expression-java="security7.setLocation(865, 414)" enable="true"/>
-                <call expression="security2.setLocation(435,160)" expression-java="security2.setLocation(435, 160)" enable="true"/>
-                <call expression="security4.setLocation(416,480)" expression-java="security4.setLocation(416, 480)" enable="true"/>
-                <call expression="security7.setLocation(697,478)" expression-java="security7.setLocation(697, 478)" enable="true"/>
             </body>
         </method>
     </methods>

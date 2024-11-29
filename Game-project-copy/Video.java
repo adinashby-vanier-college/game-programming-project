@@ -9,7 +9,7 @@ import greenfoot.*;
 public class Video extends World
 {
     public GreenfootSound audio;
-    protected GifImage video =  new  GifImage("video.gif");
+    protected GifImage video =  new GifImage("video.gif");
 
     /**
      * Constructor for objects of class Video.
@@ -17,7 +17,7 @@ public class Video extends World
     public Video()
     {
         super(600, 400, 1);
-        audio =  new  GreenfootSound("Final.wav");
+        audio =  new GreenfootSound("Final.wav");
         audio.play();
     }
 
@@ -36,7 +36,7 @@ public class Video extends World
     {
         playVideo();
         if ( ! audio.isPlaying()) {
-            Greenfoot.setWorld( new  Level3());
+            Greenfoot.setWorld( new Level3());
         }
     }
 
