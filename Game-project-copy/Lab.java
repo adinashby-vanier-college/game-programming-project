@@ -15,6 +15,9 @@ public class Lab extends World
     {
         super(600, 400, 1);
         prepare();
+        showText("Fight through the lab and gain your freedom!!!", 80, 50);
+        showText("Use the arrows to move around and use the space ", 80, 70);
+        showText("bar to shoot your enemies!", 80, 90);
     }
 
     /**
@@ -87,5 +90,12 @@ public class Lab extends World
         removeObject(security);
         S4PlayScreen s4PlayScreen = new S4PlayScreen();
         addObject(s4PlayScreen,411,341);
+    }
+    public void showText(String message, int x, int y){
+        GreenfootImage bg = getBackground();
+        Font font = new Font(true, true, 20);
+        bg.setFont(font);
+        bg.setColor(Color.WHITE);
+        bg.drawString(message, x, y);
     }
 }
