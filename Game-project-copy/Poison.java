@@ -9,6 +9,11 @@ public class Poison extends Actor
         throwPoison();
         moveLeft();  // Move poison to the left
         checkCollision();
+        if (isAtEdge() || isTouching(BlackWall.class) || (isTouching(Chair1.class))|| (isTouching(Chair2.class))||(isTouching(Bwall.class))||
+        (isTouching(Desk.class))|| (isTouching(Desk1.class))|| (isTouching(F1.class))||(isTouching(F2.class))||(isTouching(F3.class))|| (isTouching(F4.class))||
+        (isTouching(F5.class))||(isTouching(F6.class))||(isTouching(F7.class))||(isTouching(F8.class))||(isTouching(Wall.class))){
+            getWorld().removeObject(this);
+        }
     }
 
     private void throwPoison()
@@ -37,7 +42,7 @@ public class Poison extends Actor
         // If the poison collides with either monkey, restart the game
         if (monkey != null || monkey2 != null)
         {
-            Greenfoot.setWorld(new Lab());  // Restart the game by setting the world to Lab
+            Greenfoot.setWorld(new GameOverWorld());  // Restart the game by setting the world to Lab
         }
     }
 }

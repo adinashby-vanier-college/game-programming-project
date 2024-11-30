@@ -6,12 +6,16 @@ public class BB extends Actor
     private int throwCounter = 0;  // Counter to track poison throw timing
     private boolean movingUp = false;  // Start by moving down
     private int hitCounter = 0;  // Counter to track the number of hits by BananaBullet
-
+    private boolean isRemoved = false;
     public void act() 
     {
+        checkForBananaBullet();  // Check for collisions with BananaBullet
+        if(!isRemoved){
+            
         moveUpAndDown();
         throwPoison();
-        checkForBananaBullet();  // Check for collisions with BananaBullet
+    }
+    
     }
 
     private void moveUpAndDown()
@@ -54,16 +58,20 @@ public class BB extends Actor
         if (bananaBullet != null)
         {
             hitCounter++;  // Increment hit counter if collision is detected
-            
             // Remove the BananaBullet from the world after it hits BB
             getWorld().removeObject(bananaBullet);
             
-            if (hitCounter >= 15)  // If BB has been hit 15 times, remove BB
+            if (this.getWorld() != null && !isRemoved && hitCounter >= 10)  // If BB has been hit 15 times, remove BB
             {
+                isRemoved = true;
                 getWorld().removeObject(this);  // BB dies (gets removed from the world)
+                
             }
+    
         }
-    }
+    } 
+
+    
 }
 
 

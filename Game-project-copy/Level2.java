@@ -16,7 +16,13 @@ public class Level2 extends World
         super(1000, 600, 1);
         prepare();
     }
-
+    public void act(){
+        if (getObjects(Security.class).isEmpty()){
+            Arrow2 arrow = new Arrow2();
+            addObject(arrow,958,408);
+        }
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -145,8 +151,7 @@ public class Level2 extends World
         addObject(f4, 575, 70);
         F4 f42 =  new F4();
         addObject(f42, 525, 519);
-        F1 f1 =  new F1();
-        addObject(f1, 102, 327);
+
         F3 f3 =  new F3();
         addObject(f3, 568, 339);
         F5 f5 =  new F5();
@@ -166,26 +171,50 @@ public class Level2 extends World
         desk1.setLocation(781, 98);
         desk1.setLocation(802, 134);
         f2.setLocation(240, 478);
-        f1.setLocation(124, 357);
         f2.setLocation(249, 464);
         f5.setLocation(291, 57);
         F7 f7 =  new F7();
         addObject(f7, 284, 247);
         Chair2 chair22 =  new Chair2();
         addObject(chair22, 319, 293);
-        Security security =  new Security();
-        addObject(security, 200, 164);
-        Security security2 =  new Security();
-        addObject(security2, 388, 512);
-        Security security3 =  new Security();
-        addObject(security3, 426, 385);
-        Security security4 =  new Security();
-        addObject(security4, 660, 462);
-        Security security5 =  new Security();
-        addObject(security5, 563, 190);
-        Security security6 =  new Security();
-        addObject(security6, 825, 279);
-        Security security7 =  new Security();
-        addObject(security7, 913, 402);
+
+        Security security = new Security();
+        addObject(security,357,153);
+        Security security2 = new Security();
+        addObject(security2,388,453);
+        Security security3 = new Security();
+        addObject(security3,659,422);
+        Security security4 = new Security();
+        addObject(security4,861,373);
+        Security security5 = new Security();
+        addObject(security5,771,232);
+        security3.setLocation(652,444);
+        security5.setLocation(761,271);
+        Monkey monkey = new Monkey();
+        addObject(monkey,51,249);
+        f7.setLocation(308,280);
+        f7.setLocation(352,317);
+        f7.setLocation(318,261);
+        chair22.setLocation(351,311);
+        f7.setLocation(267,248);
+        chair22.setLocation(303,281);
+        f3.setLocation(667,325);
+        f3.setLocation(597,307);
+        f3.setLocation(577,291);
+        f3.setLocation(590,295);
+        f3.setLocation(628,317);
+        security5.setLocation(609,202);
+        desk1.setLocation(826,107);
+        chair2.setLocation(893,156);
+        chair1.setLocation(772,138);
+        desk1.setLocation(829,100);
+        desk1.setLocation(886,146);
+        desk1.setLocation(807,80);
+        chair2.setLocation(893,139);
+        desk1.setLocation(855,96);
+        desk1.setLocation(781,134);
+        desk1.setLocation(857,107);
+        desk1.setLocation(882,135);
+        desk1.setLocation(843,90);
     }
 }

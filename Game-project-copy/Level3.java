@@ -16,7 +16,13 @@ public class Level3 extends World
         super(1000, 600, 1);
         prepare();
     }
-
+     public void act(){
+        if (getObjects(BB.class).isEmpty()){
+            Key key = new Key();
+            addObject(key,712,293);
+        }
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -199,5 +205,6 @@ public class Level3 extends World
         Monkey2 monkey2 =  new Monkey2();
         addObject(monkey2, 76, 397);
         bB.setLocation(694, 157);
+       
     }
 }

@@ -36,18 +36,31 @@ public class Monkey extends Actor
         fixImageDirection();
         //addObject();
         BulletCollision();
+        if(isTouching(Arrow.class)){
+            Greenfoot.playSound("LevelUp.wav");
+            Greenfoot.setWorld(new Level2());
+        }
+        if(isTouching(Arrow2.class)){
+            Greenfoot.playSound("LevelUp.wav");
+            Greenfoot.setWorld(new Video());
+        }
+        if(isTouching(Key.class)){
+            Greenfoot.playSound("key.wav");
+            Greenfoot.setWorld(new Jungle());
+        }
     }
     private void BulletCollision(){
         Bullet bullet = (Bullet) getOneIntersectingObject(Bullet.class);
         if (bullet != null){
             health--; 
             getWorld().removeObject(bullet);
-            //Greenfoot.playSound("OOf.mp3");
+            Greenfoot.playSound("Oof.wav");
             if (health <= 0){
                 Greenfoot.setWorld(new GameOverWorld());
             }
         }
     }
+    
     /**
      * 
      */

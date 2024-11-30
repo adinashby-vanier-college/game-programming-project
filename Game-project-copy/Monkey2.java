@@ -21,6 +21,16 @@ public class Monkey2 extends Monkey
     {
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
+        if(isTouching(Arrow.class)){
+            Greenfoot.setWorld(new Level2());
+        }
+        if(isTouching(Arrow2.class)){
+            Greenfoot.setWorld(new Video());
+        }
+        if(isTouching(Key.class)){
+            Greenfoot.playSound("key.wav");
+            Greenfoot.setWorld(new Jungle());
+        }
     }
 
     /**

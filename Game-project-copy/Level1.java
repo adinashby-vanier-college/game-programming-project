@@ -19,7 +19,13 @@ public class Level1 extends World
         super(1000, 600, 1);
         prepare();
     }
-
+    public void act(){
+        if (getObjects(Security.class).isEmpty()){
+            Arrow arrow = new Arrow();
+            addObject(arrow,948,262);
+        }
+    }
+    
     /**
      * Prepare the world for the start of the program. That is: create the initial objects and add them to the world.
      */
@@ -283,5 +289,6 @@ public class Level1 extends World
         removeObject(security2);
         Security security2 = new Security();
         addObject(security2,289,286);
+        
     }
 }
