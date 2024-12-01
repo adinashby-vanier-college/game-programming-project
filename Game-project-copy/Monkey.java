@@ -7,7 +7,7 @@ import greenfoot.*;
 public class Monkey extends Actor
 {
     private int speed = 3;
-    private int gunReloadTime = 20;
+    private int gunReloadTime = 25;
     private int reloadDelayCount = 0;
     private BananaBullet BB =  new  BananaBullet(this);
     int Monkey2;
@@ -17,8 +17,6 @@ public class Monkey extends Actor
     public boolean isFacingRight = true;
     private GreenfootImage imageRight = new GreenfootImage(getImage());
     private GreenfootImage imageLeft = new GreenfootImage(imageRight);
-        
-
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
     public Monkey(){
         imageLeft.mirrorHorizontally();
@@ -29,6 +27,7 @@ public class Monkey extends Actor
      */
     public void act()
     {
+        Hearts life = new Hearts();
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
         BPowerUp();
@@ -48,6 +47,22 @@ public class Monkey extends Actor
             Greenfoot.playSound("key.wav");
             Greenfoot.setWorld(new Jungle());
         }
+        switch (health){
+                case 1:
+                    life.setImage("hearts1.png");
+                    break;
+                case 2:
+                    life.setImage("hearts2.png");
+                    break;
+                case 3:
+                    life.setImage("hearts3.png");
+                    break;
+                case 4:
+                    life.setImage("hearts4.png");
+                    break;
+                default:
+                    life.setImage("hearts5.png");
+            }
     }
     private void BulletCollision(){
         Bullet bullet = (Bullet) getOneIntersectingObject(Bullet.class);
@@ -263,7 +278,6 @@ public class Monkey extends Actor
         if (Greenfoot.isKeyDown("space")) {
             Greenfoot.playSound("gunShot.wav");
             fireBananaBullet();
-            
         }
     }
 
@@ -313,10 +327,10 @@ public class Monkey extends Actor
     }
     public void VPowerUp(){
         Actor vial = getOneIntersectingObject(Vial.class);
-        if (vial !=null){
+        if (vial !=null){   
             World world = getWorld();
             world.removeObject(vial);
-            setGunReloadTime(5);
+            setGunReloadTime(1);
         }
     }
     
@@ -329,6 +343,12 @@ public class Monkey extends Actor
             setImage(imageLeft);
         }
     }
+    public int getHealth(){
+        return health;
+    }
+ 
+
+
     /*public void addObject(){
         Actor banana = getOneIntersectingObject(Banana.class);
         if (banana != null){
