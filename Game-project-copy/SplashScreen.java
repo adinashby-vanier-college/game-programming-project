@@ -19,7 +19,7 @@ public class SplashScreen extends World
     public void act(){
         timer++;
         if (timer >= transitionTime){
-            Greenfoot.setWorld(new Lab());
+            Greenfoot.setWorld(new Instruction());
         }
     }
 }

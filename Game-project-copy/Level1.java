@@ -289,6 +289,14 @@ public class Level1 extends World
         removeObject(security2);
         Security security2 = new Security();
         addObject(security2,289,286);
-        
+
+        Box box = new Box();
+        addObject(box,342,458);
+        Box box2 = new Box();
+        addObject(box2,747,155);
+        Box box3 = new Box();
+        addObject(box3,607,459);
+        box2.setLocation(552,255);
+        box2.setLocation(520,276);
     }
 }

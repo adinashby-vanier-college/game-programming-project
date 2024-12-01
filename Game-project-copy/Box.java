@@ -5,12 +5,11 @@ import greenfoot.*;
 /**
  * 
  */
-public class PowerUpBox extends Actor
+public class Box extends Actor
 {
     private int hitCount = 0;
-
     /**
-     * Act - do whatever the PowerUpBox wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the Box wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {

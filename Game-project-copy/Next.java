@@ -6,17 +6,17 @@ import greenfoot.*;
 /**
  * 
  */
-public class Play extends Actor
+public class Next extends Actor
 {
 
     /**
-     * 
+     * Act - do whatever the Next wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.playSound("startSound.wav");
-            Greenfoot.setWorld( new  Level1());
+            Greenfoot.setWorld( new  Lab());
+            Greenfoot.playSound("key.wav");
         }
     }
 }

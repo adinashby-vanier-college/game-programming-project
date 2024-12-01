@@ -15,6 +15,7 @@ public class Monkey extends Actor
     private int transitionTime = 5;
     private int health = 5;
     public boolean isFacingRight = true;
+    private boolean isRemoved = false;
     private GreenfootImage imageRight = new GreenfootImage(getImage());
     private GreenfootImage imageLeft = new GreenfootImage(imageRight);
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
@@ -27,14 +28,16 @@ public class Monkey extends Actor
      */
     public void act()
     {
-        Hearts life = new Hearts();
+        BPowerUp();
+        if(!isRemoved){
+        //Hearts life = new Hearts();
         checkKeyPress();
         reloadDelayCount = reloadDelayCount + 1;
-        BPowerUp();
         VPowerUp();
         fixImageDirection();
-        //addObject();
         BulletCollision();
+    }
+        
         if(isTouching(Arrow.class)){
             Greenfoot.playSound("LevelUp.wav");
             Greenfoot.setWorld(new Level2());
@@ -47,7 +50,7 @@ public class Monkey extends Actor
             Greenfoot.playSound("key.wav");
             Greenfoot.setWorld(new Jungle());
         }
-        switch (health){
+        /*switch (health){
                 case 1:
                     life.setImage("hearts1.png");
                     break;
@@ -62,7 +65,7 @@ public class Monkey extends Actor
                     break;
                 default:
                     life.setImage("hearts5.png");
-            }
+            }*/
     }
     private void BulletCollision(){
         Bullet bullet = (Bullet) getOneIntersectingObject(Bullet.class);
@@ -314,17 +317,30 @@ public class Monkey extends Actor
         reloadDelayCount = 0;
     }
     public void BPowerUp(){
-        Actor banana = getOneIntersectingObject(Banana.class);
-        if (banana !=null){
+        if (isTouching(Banana.class)){
+            World world = getWorld();
+            removeTouching(Banana.class);
+            Monkey2 monkey2 =new Monkey2();
+            world.addObject(monkey2, getX(), getY());
+            if(world !=null && !isRemoved){
+                isRemoved = true;
+                world.removeObject(this);
+            }
+        }
+    }
+        /*Actor banana = getOneIntersectingObject(Banana.class);
+            if (banana !=null){
             World world = getWorld();
             world.removeObject(banana);
             setImage("primate194_100.png");
             timer++;
             if(timer >= transitionTime){
                 setImage("primate194_small.png"); 
-        }
-    }
-    }
+            }
+        }*/
+        
+    
+    
     public void VPowerUp(){
         Actor vial = getOneIntersectingObject(Vial.class);
         if (vial !=null){   
