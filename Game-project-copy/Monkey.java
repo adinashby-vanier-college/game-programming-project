@@ -18,6 +18,11 @@ public class Monkey extends Actor
     private boolean isRemoved = false;
     private GreenfootImage imageRight = new GreenfootImage(getImage());
     private GreenfootImage imageLeft = new GreenfootImage(imageRight);
+    private int reloadTimer = 0;
+    private boolean shouldRemove = false;
+    private boolean isBig = false;
+    private int MonkeyTimer = 0;
+    private final int TRANSITION_DURATION = 7 * 60;
     /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
     public Monkey(){
         imageLeft.mirrorHorizontally();
@@ -322,6 +327,9 @@ public class Monkey extends Actor
             removeTouching(Banana.class);
             Monkey2 monkey2 =new Monkey2();
             world.addObject(monkey2, getX(), getY());
+            shouldRemove = true;
+            isBig = true;
+            MonkeyTimer = TRANSITION_DURATION;
             if(world !=null && !isRemoved){
                 isRemoved = true;
                 world.removeObject(this);
@@ -347,6 +355,7 @@ public class Monkey extends Actor
             World world = getWorld();
             world.removeObject(vial);
             setGunReloadTime(1);
+            reloadTimer = 7 * 60;
         }
     }
     

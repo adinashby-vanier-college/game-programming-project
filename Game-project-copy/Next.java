@@ -15,7 +15,7 @@ public class Next extends Actor
     public void act()
     {
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld( new  Lab());
+            Greenfoot.setWorld( new Lab());
             Greenfoot.playSound("key.wav");
         }
     }

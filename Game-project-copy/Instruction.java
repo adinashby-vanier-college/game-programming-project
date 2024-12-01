@@ -24,7 +24,7 @@ public class Instruction extends World
      */
     private void prepare()
     {
-        Next next =  new  Next();
+        Next next =  new Next();
         addObject(next, 504, 361);
     }
 }
