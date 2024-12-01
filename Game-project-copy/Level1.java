@@ -10,7 +10,7 @@ public class Level1 extends World
     protected Security security =  new Security();
     protected Security security2 =  new Security();
     protected Security security3 =  new Security();
-
+    private GreenfootSound music = new GreenfootSound("Danger.mp3");
     /**
      * Constructor for objects of class Level1.
      */
@@ -18,6 +18,7 @@ public class Level1 extends World
     {
         super(1000, 600, 1);
         prepare();
+        started();
     }
     public void act(){
         if (getObjects(Security.class).isEmpty()){
@@ -25,7 +26,12 @@ public class Level1 extends World
             addObject(arrow,948,262);
         }
     }
-    
+    public void stopped(){
+        music.stop();
+    }
+    public void started(){
+        music.playLoop();
+    }
     /**
      * Prepare the world for the start of the program. That is: create the initial objects and add them to the world.
      */

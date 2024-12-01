@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class Level2 extends World
 {
-
+    private GreenfootSound music = new GreenfootSound("Danger.mp3");
     /**
      * Constructor for objects of class Level2.
      */
@@ -15,12 +15,19 @@ public class Level2 extends World
     {
         super(1000, 600, 1);
         prepare();
+        started();
     }
     public void act(){
         if (getObjects(Security.class).isEmpty()){
             Arrow2 arrow = new Arrow2();
             addObject(arrow,958,408);
         }
+    }
+    public void stopped(){
+        music.stop();
+    }
+    public void started(){
+        music.play();
     }
     
     /**
@@ -216,5 +223,15 @@ public class Level2 extends World
         desk1.setLocation(857,107);
         desk1.setLocation(882,135);
         desk1.setLocation(843,90);
+        Box box = new Box();
+        addObject(box,436,362);
+        Box box2 = new Box();
+        addObject(box2,894,227);
+        Box box3 = new Box();
+        addObject(box3,435,544);
+        Box box4 = new Box();
+        addObject(box4,485,113);
+        box.setLocation(480,328);
+        box2.setLocation(912,235);
     }
 }

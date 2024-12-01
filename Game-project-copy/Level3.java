@@ -7,7 +7,7 @@ import greenfoot.*;
  */
 public class Level3 extends World
 {
-
+    private GreenfootSound music = new GreenfootSound("Danger.mp3");
     /**
      * Constructor for objects of class Level3.
      */
@@ -15,6 +15,7 @@ public class Level3 extends World
     {
         super(1000, 600, 1);
         prepare();
+        started();
     }
      public void act(){
         if (getObjects(BB.class).isEmpty()){
@@ -22,7 +23,12 @@ public class Level3 extends World
             addObject(key,712,293);
         }
     }
-    
+    public void stopped(){
+        music.stop();
+    }
+    public void started(){
+        music.play();
+    }
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

@@ -42,6 +42,8 @@ public class Poison extends Actor
         // If the poison collides with either monkey, restart the game
         if (monkey != null || monkey2 != null)
         {
+            World Level3 = getWorld();
+            Level3.stopped();
             Greenfoot.setWorld(new GameOverWorld());  // Restart the game by setting the world to Lab
         }
     }
